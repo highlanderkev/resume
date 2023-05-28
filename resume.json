@@ -1,0 +1,730 @@
+{
+  "basics": {
+    "name": "Kevin Westropp",
+    "label": "Software Engineering Team Lead at Tipico",
+    "image": "https://avatars.githubusercontent.com/u/2483268?v=4",
+    "email": "mail@kevinpatrickwestropp.com",
+    "phone": "",
+    "url": "https://www.kevinpatrickwestropp.com",
+    "summary": "Experienced software engineer and front-end developer with a proven track record in leading teams, coordinating projects, mentoring developers, and enhancing user experiences. Proficient in various technologies including React, Vue.js, JavaScript, HTML, CSS, and TypeScript. Holds a Master's degree in Computer Science and has a strong commitment to delivering high-quality code and optimizing performance. Also actively involved in volunteer work, mentoring students and contributing to environmental initiatives.",
+    "profiles": [
+      {
+        "network": "gitconnected",
+        "username": "highlanderkev",
+        "url": "https://gitconnected.com/highlanderkev"
+      },
+      {
+        "network": "GitHub",
+        "username": "highlanderkev",
+        "url": "https://github.com/highlanderkev"
+      },
+      {
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/kevinpatrickwestropp/",
+        "username": "kevinpatrickwestropp"
+      }
+    ],
+    "headline": "Developer",
+    "blog": null,
+    "yearsOfExperience": 10,
+    "username": "highlanderkev",
+    "locationAsString": "Denver, Colorado",
+    "region": "Denver, Colorado",
+    "karma": 12,
+    "id": "95c3e10f-65ae-4e58-bda1-67e6f45720d0",
+    "followers": 26,
+    "following": 46,
+    "picture": "https://avatars.githubusercontent.com/u/2483268?v=4",
+    "website": "https://www.kevinpatrickwestropp.com"
+  },
+  "skills": [
+    {
+      "name": "Front-End/Web Development",
+      "level": "Expert",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "jQuery",
+        "SCSS/SASS",
+        "Less",
+        "XML"
+      ],
+      "rating": 0,
+      "yearsOfExperience": 8
+    },
+    {
+      "name": "Web Application Development",
+      "level": "Expert",
+      "keywords": [
+        "React",
+        "Redux",
+        "Next.js",
+        "Angular",
+        "Vue",
+        "Nuxt",
+        "Ruby on Rails",
+        "Django",
+        "Backbone.js",
+        "Web2py",
+        "Node.js"
+      ],
+      "rating": 0,
+      "yearsOfExperience": 8
+    },
+    {
+      "name": "Software Development",
+      "level": "Expert",
+      "keywords": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "Dart",
+        "Golang",
+        "Scala"
+      ],
+      "rating": 0,
+      "yearsOfExperience": 8
+    },
+    {
+      "name": "Agile Project Management",
+      "level": "Advanced",
+      "keywords": [
+        "Scrum",
+        "Kanban",
+        "Jira"
+      ],
+      "rating": 0,
+      "yearsOfExperience": 7
+    },
+    {
+      "name": "DevOps",
+      "level": "Advanced",
+      "keywords": [
+        "Git",
+        "Github Actions",
+        "Jenkins",
+        "CircleCI"
+      ],
+      "rating": 0,
+      "yearsOfExperience": 6
+    },
+    {
+      "name": "Cloud Development",
+      "level": "Advanced",
+      "keywords": [
+        "Microsoft Azure",
+        "Amazon Web Services (AWS)",
+        "Google Cloud Platform (gcp)",
+        "Firebase"
+      ],
+      "rating": 0,
+      "yearsOfExperience": 5
+    },
+    {
+      "name": "API Development",
+      "level": "Advanced",
+      "keywords": [
+        ".NET",
+        "Dart",
+        "Node.js",
+        "Golang",
+        "Java",
+        "Python",
+        "Express.js",
+        "TypeScript"
+      ],
+      "rating": 0,
+      "yearsOfExperience": 5
+    },
+    {
+      "name": "Test Driven Development",
+      "level": "Advanced",
+      "keywords": [
+        "Mocha",
+        "Jest",
+        "JUnit",
+        "Chai"
+      ],
+      "rating": 0,
+      "yearsOfExperience": 4
+    },
+    {
+      "name": "Back-End/Database Development",
+      "level": "Intermediate",
+      "keywords": [
+        "SQL",
+        "PostgreSQL",
+        "MySQL"
+      ],
+      "rating": 0,
+      "yearsOfExperience": 3
+    },
+    {
+      "name": "Network Programming",
+      "level": "Advanced",
+      "keywords": [
+        "Java",
+        "Scala"
+      ],
+      "rating": 0,
+      "yearsOfExperience": 2
+    },
+    {
+      "name": "Data Science",
+      "level": "Intermediate",
+      "keywords": [
+        "R",
+        "Python"
+      ],
+      "rating": 0,
+      "yearsOfExperience": 2
+    }
+  ],
+  "projects": [],
+  "work": [
+    {
+      "name": "Tipico",
+      "location": "Denver, Colorado, United States",
+      "description": "",
+      "position": "Software Engineering Team Lead",
+      "url": "https://www.tipico.com/",
+      "startDate": "2022-02-01",
+      "date": "2022-02-01",
+      "summary": "Tools & Technology: React, Redux, Typescript, JavaScript, Node.js, Express.js, EJS, Mixpanel, GTM, Docker, Kubernetes\nResponsibilities & Achievements:\n- Leading UX Development team for main sportsbook application\n- Coordinating project requirements with stakeholders, product owners, developers, designers and analysts\n- Mentoring other developers in expanding programming skills and methodologies\n- Building out new UX designs that elevate the User Experience across sportsbook and related applications (i.e. portal & casino)\n- Reviewing front end designs and code development to ensure quality standards\n- Partnering with Quality Assurance Engineers to expand the robustness of the testing suite of tools and ensure regressions are consistent and include minimal issues for customers\n- Working with the Infrastructure team to enhance the CICD pipeline\n- Consulting on engineering hiring process to improve talent acquisition\n- Working on team capacity planning with Product Management\n- Performance monitoring and investigating performance degradation",
+      "highlights": [],
+      "isCurrentRole": true,
+      "start": {
+        "year": 2022,
+        "month": 2
+      },
+      "end": {},
+      "company": "Tipico",
+      "website": "https://www.tipico.com/"
+    },
+    {
+      "name": "Brinks Home Security",
+      "location": "Denver Metropolitan Area",
+      "description": "",
+      "position": "Lead Front-End Engineer",
+      "url": "https://brinkshome.com/",
+      "startDate": "2020-10-01",
+      "endDate": "2022-02-01",
+      "summary": "Tools & Technology: HTML, CSS, Sass, Bootstrap, JavaScript, TypeScript, Vue.js, NuxtJS, Webpack, Contentful, jQuery, Ruby on Rails, Spree, Hubspot, Google Tag Manager, Google Analytics, Jira, Github, Heroku\nResponsibilities & Achievements:\n- Leading the UX Development team for all marketing related activities\n- Coordinating project requirements between stakeholders, developers, consultants, designers and analysts\n- Mentoring other developers in expanding UX skills and methodologies\n- Building out new UX designs that streamline and elevate the user experience\n- Partnering with IT teams to build out infrastructure and workflows for automation of customer lifecycles\n- Reviewing front end designs and code development to ensure quality standards\n- Promoting performance improvements across different tech stacks\n- Technical Point of contact for new UX rebranding efforts\n- Production/DevOps Manager for all front-end code changes\n- Performing code reviews for all front-end code changes\n- Cloud architect, utilizing AWS, Heroku, Git and other Saas applications to host and maintain the brinkshome.com domain along with subdomains\n- Managing analytics tracking of user interactions on site and GTM tag maintenance",
+      "highlights": [],
+      "isCurrentRole": false,
+      "start": {
+        "year": 2020,
+        "month": 10
+      },
+      "end": {
+        "year": 2022,
+        "month": 2
+      },
+      "company": "Brinks Home Security",
+      "website": "https://brinkshome.com/"
+    },
+    {
+      "name": "Brinks Home Security",
+      "location": "Denver, Colorado, United States",
+      "description": "",
+      "position": "Senior Front-End Engineer",
+      "url": "https://brinkshome.com/",
+      "startDate": "2018-11-01",
+      "endDate": "2020-10-01",
+      "summary": "Tools & Technology: HTML, CSS, Sass, Bootstrap, JavaScript, TypeScript, Vue.js, NuxtJS, Webpack, Contentful, jQuery, Ruby on Rails, Spree, Hubspot, Google Tag Manager, Google Analytics, Jira, Github, Heroku\nResponsibilities & Achievements:\n- Building out front end website components in vue + html + css + javascript/typescript\n- Migrate legacy jQuery code to vue based implementation\n- Assisted in setting up and guiding the content authoring solution for marketing, plus helping to define the philosophy around it\n- Facilitated the migration of legacy Ruby on Rails platforms to new static web platform powered by Nuxt.js, Contentful and Netlify\n- Helped to architect the custom content modeling integration with the front end system using Contentful, Nuxt.js and Netlify\n- Review code to ensure high quality of standards\n- Work with UX designers to translate designs into functional front end code/markup\n- Diagnose and fix bugs across the technical stack\n- Mentor and guide other developers in front end development\n- Manage projects from ideation through implementation\n- Be brand and UI ambassador to other organization development teams",
+      "highlights": [],
+      "isCurrentRole": false,
+      "start": {
+        "year": 2018,
+        "month": 11
+      },
+      "end": {
+        "year": 2020,
+        "month": 10
+      },
+      "company": "Brinks Home Security",
+      "website": "https://brinkshome.com/"
+    },
+    {
+      "name": "TransUnion",
+      "location": "Greater Chicago Area",
+      "description": "",
+      "position": "Senior UI Developer, Senior Consultant",
+      "url": "https://www.transunion.com/",
+      "startDate": "2018-05-01",
+      "endDate": "2018-11-01",
+      "summary": "Tools & Technology: HTML, CSS, Sass, JavaScript, TypeScript, Angular, Webpack, Web Components, Polymer\nResponsibilities & Achievements:\n- Building new consumer marketing web pages leveraging best in class development techniques\n- Improving UI designs and optimizing front-end code\n- Focused on performance improvements and optimizations on all TU websites\n- Help to implement process improvements and optimized development workflows\n- Helping team integrating Agile methodology into existing workflows\n- Mentoring other developers by reviewing code and providing guidance to high level designs\n- Product Owner for site wide CMS solution",
+      "highlights": [],
+      "isCurrentRole": false,
+      "start": {
+        "year": 2018,
+        "month": 5
+      },
+      "end": {
+        "year": 2018,
+        "month": 11
+      },
+      "company": "TransUnion",
+      "website": "https://www.transunion.com/"
+    },
+    {
+      "name": "Accenture",
+      "location": "Greater Chicago Area",
+      "description": "",
+      "position": "Senior Front End Developer, Front End Development Consultant",
+      "url": "https://www.accenture.com/",
+      "startDate": "2017-07-01",
+      "endDate": "2018-05-01",
+      "summary": "Tools & Technology: HTML, CSS, Sass, JavaScript, Angular, Node.js, Express.js, Azure, AWS \nResponsibilities & Achievements:\n- Working with clients to build out new single page web applications in AngularJS.\n- Reviewing code from both external and internal developers to ensure high quality of product and standards.\n- Leveraging knowledge of web standards and best practices to help optimize new projects.",
+      "highlights": [],
+      "isCurrentRole": false,
+      "start": {
+        "year": 2017,
+        "month": 7
+      },
+      "end": {
+        "year": 2018,
+        "month": 5
+      },
+      "company": "Accenture",
+      "website": "https://www.accenture.com/"
+    },
+    {
+      "name": "Egencia, an Expedia company",
+      "location": "Greater Chicago Area",
+      "description": "",
+      "position": "Software Development Engineer II",
+      "url": "https://www.egencia.com/",
+      "startDate": "2016-06-01",
+      "endDate": "2017-07-01",
+      "summary": "Tools & Technology: HTML, CSS, LESS, JavaScript, jQuery, Backbone.js, Handlebars.js, Mocha, Selenium, C++, Java, Spring Boot, Maven, AWS\nResponsibilities & Achievements:\n- Using agile methodology for development of new Egencia Global Home Page.\n- Developing new Fusion (Java Spring) Global Home Page to replace legacy C++ application.\n- Leveraging knowledge of Backbone.js, Handlebars and ECMAscript 2016 to implement new front end design for Global Home Page.\n- Writing new backend Java Services for development of new client side application.\n- Helping to expand on Automation and CICD for faster iteration of features and increasing robustness.",
+      "highlights": [],
+      "isCurrentRole": false,
+      "start": {
+        "year": 2016,
+        "month": 6
+      },
+      "end": {
+        "year": 2017,
+        "month": 7
+      },
+      "company": "Egencia, an Expedia company",
+      "website": "https://www.egencia.com/"
+    },
+    {
+      "name": "kCura",
+      "location": "Chicago",
+      "description": "",
+      "position": "Software Engineer",
+      "url": "https://www.relativity.com/",
+      "startDate": "2014-08-01",
+      "endDate": "2016-05-01",
+      "summary": "Tools & Technology: HTML, CSS, JavaScript, jQuery, .NET, C#, SQL, Angular.js, C++, ASP.NET, Visual Basic, LINQ \nResponsibilities & Achievements:\n- Developed across full software stack to expand software functionality and features. Wrote new and re-factoring C++, C#, Visual Basic, JavaScript, jQuery and SQL code for feature development.\n- Wrote new and re-factored C++, C#, Visual Basic, JavaScript, jQuery and SQL code for feature development.\n- Leveraged knowledge of MVC, COM, CLR, WebForms, AngularJS, ASP.NET and other technologies to extend and implement functionality.\n- Used agile methodology for development life-cycle along side team of less than ten.\n- Helped develop UI data visualization widgets with AngularJS, D3.js and C3.js for analytics review.\n- Designed endpoints and logic for PDF printing framework to allow for new mass save as pdf option as part of recent software release.\n- Re-factored and extended processing software to handle MS Office Field Codes when imaging documents to provide clients with multiple options for output.\n- Implemented new UI framework which leverages AngularJS to provide a more robust and feature rich experience for Relativity users.",
+      "highlights": [],
+      "isCurrentRole": false,
+      "start": {
+        "year": 2014,
+        "month": 8
+      },
+      "end": {
+        "year": 2016,
+        "month": 5
+      },
+      "company": "kCura",
+      "website": "https://www.relativity.com/"
+    },
+    {
+      "name": "savvo digital sommelier solutions",
+      "location": "",
+      "description": "",
+      "position": "Software Developer Intern",
+      "url": "",
+      "startDate": "2014-02-01",
+      "endDate": "2014-05-01",
+      "summary": "Tools & Technology: HTML, CSS, JavaScript, C#, .NET, jQuery\nResponsibilities & Achievements:\n- Update front-end design and functionality of main ASP.NET web application.\n- Refactor code and program new designs in HTML, CSS, JavaScript, jquery and C#.",
+      "highlights": [],
+      "isCurrentRole": false,
+      "start": {
+        "year": 2014,
+        "month": 2
+      },
+      "end": {
+        "year": 2014,
+        "month": 5
+      },
+      "company": "savvo digital sommelier solutions",
+      "website": ""
+    },
+    {
+      "name": "TransUnion",
+      "location": "",
+      "description": "",
+      "position": "Product Design and QA Intern",
+      "url": "https://www.transunion.com/",
+      "startDate": "2013-06-01",
+      "endDate": "2013-09-01",
+      "summary": "Tools & Technology: iOS, Objective-C, Swift, HTML, CSS, Perl, JavaScript, Java\nResponsibilities & Achievements:\n- Developed an iPhone application for internal server process monitoring and tracking.\n- Updated and added functionality for backend web monitoring applications written in JavaScript, HTML and CSS.\n- Tested and wrote documentation for roll-out of proprietary content delivery network (CDN) to use with international websites.",
+      "highlights": [],
+      "isCurrentRole": false,
+      "start": {
+        "year": 2013,
+        "month": 6
+      },
+      "end": {
+        "year": 2013,
+        "month": 9
+      },
+      "company": "TransUnion",
+      "website": "https://www.transunion.com/"
+    },
+    {
+      "name": "ZS Associates",
+      "location": "Evanston, IL",
+      "description": "",
+      "position": "IT Operations Assistant",
+      "url": "https://www.zs.com/",
+      "startDate": "2012-10-01",
+      "endDate": "2013-05-01",
+      "summary": "Tools & Technology: MS Office Suite, Inventory Management Systems, \nResponsibilities & Achievements:\n- First Point of Contact for Technical Support of Software and Hardware Issues.\n- Assisted users with software and systems questions on a daily basis.\n- Setup and configured cell phones, laptops, iPads and other hardware.\n- Supported IT department initiatives, including roll-outs and hardware updates.",
+      "highlights": [],
+      "isCurrentRole": false,
+      "start": {
+        "year": 2012,
+        "month": 10
+      },
+      "end": {
+        "year": 2013,
+        "month": 5
+      },
+      "company": "ZS Associates",
+      "website": "https://www.zs.com/"
+    },
+    {
+      "name": "Kirkland & Ellis LLP",
+      "location": "",
+      "description": "",
+      "position": "Litigation Project Assistant",
+      "url": "https://www.kirkland.com/",
+      "startDate": "2011-05-01",
+      "endDate": "2012-05-01",
+      "summary": "Tools & Technology: MS Office Suite, Relativity, Document Management Systems\nResponsibilities & Achievements:\n- Edited and proofed legal correspondence for court memorandum and briefs.\n- Organized and tracked proceedings across databases (Autonomy & Relativity).\n- Researched and prepared documentation for attorney team review.\n- Coordinated projects for streamlining into larger team work-flow.",
+      "highlights": [],
+      "isCurrentRole": false,
+      "start": {
+        "year": 2011,
+        "month": 5
+      },
+      "end": {
+        "year": 2012,
+        "month": 5
+      },
+      "company": "Kirkland & Ellis LLP",
+      "website": "https://www.kirkland.com/"
+    },
+    {
+      "name": "IES Abroad",
+      "location": "",
+      "description": "",
+      "position": "Production Assistant",
+      "url": "https://www.iesabroad.org/",
+      "startDate": "2010-06-01",
+      "endDate": "2011-04-01",
+      "summary": "Tools & Technology: MS Office Suite\nResponsibilities & Achievements:\n- Cataloged inventory of marketing brochures, education catalogs and business reports.\n- Maintained high-speed Cannon and HP printers, fax machines and copiers.\n- Processed and managed outgoing & incoming mail, packages and marketing materials.",
+      "highlights": [],
+      "isCurrentRole": false,
+      "start": {
+        "year": 2010,
+        "month": 6
+      },
+      "end": {
+        "year": 2011,
+        "month": 4
+      },
+      "company": "IES Abroad",
+      "website": "https://www.iesabroad.org/"
+    }
+  ],
+  "publications": [
+    {
+      "name": "CICD pipeline for software development",
+      "publisher": "trustradius",
+      "releaseDate": "2017-01-16",
+      "url": "https://www.trustradius.com/reviews/travis-ci-2017-01-13-10-25-58?utm_medium=email&utm_source=transactional&utm_campaign=review-published",
+      "summary": "",
+      "website": "https://www.trustradius.com/reviews/travis-ci-2017-01-13-10-25-58?utm_medium=email&utm_source=transactional&utm_campaign=review-published"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Free Code Camp",
+      "url": "https://www.freecodecamp.org/",
+      "area": "Computer Software Engineering",
+      "studyType": "Full Stack Web Development Certification",
+      "startDate": "2016-12-01",
+      "endDate": "2016-12-01",
+      "score": "",
+      "courses": [],
+      "description": "",
+      "activities": "",
+      "start": {
+        "year": 2016,
+        "month": 12
+      },
+      "end": {
+        "year": 2016,
+        "month": 12
+      },
+      "website": "https://www.freecodecamp.org/",
+      "gpa": ""
+    },
+    {
+      "institution": "DePaul University",
+      "url": "https://www.cdm.depaul.edu/Pages/default.aspx",
+      "area": "Computer Science",
+      "studyType": "Master of Science (M.S.)",
+      "startDate": "2012-12-01",
+      "endDate": "2014-12-01",
+      "score": "3.7",
+      "courses": [
+        "CSC 536 - Distributed Systems II",
+        "CSC 447 - Concepts of Programming Languages",
+        "CSC 421 - Applied Algorithms and Structures",
+        "CSC 373 - Computer Systems I",
+        "CSC 578 - Neural Networks and Machine Learning",
+        "CSC 435 - Distributed Systems",
+        "CSC 438 - Framework for Web Application Development",
+        "CSC 555 - Mining Big Data",
+        "CSC 352 - Database Programming",
+        "CSC 374 - Computer Systems II",
+        "SE 450 - Object-Oriented Software Development",
+        "CSC 552 - Concurrent Software Development",
+        "CSC 453 - Database Technologies",
+        "CSC 202 - Discrete Structures for Computer Science",
+        "CSC 500 - Research Colloquium",
+        "CSC 383 - Data Structures and Algorithms in Java"
+      ],
+      "description": "",
+      "activities": "",
+      "start": {
+        "year": 2012,
+        "month": 12
+      },
+      "end": {
+        "year": 2014,
+        "month": 12
+      },
+      "website": "https://www.cdm.depaul.edu/Pages/default.aspx",
+      "gpa": "3.7"
+    },
+    {
+      "institution": "College of Lake County",
+      "url": "https://www.clcillinois.edu/",
+      "area": "Computer Programming",
+      "studyType": "Continuing Professional Development",
+      "startDate": "2010-12-01",
+      "endDate": "2012-12-01",
+      "score": "",
+      "courses": [
+        "EITP1211 - Introduction to Programming",
+        "EWEB1010 - Creating Web Pages",
+        "EPY30412 - Introduction to Python 3 Programming",
+        "EJAB0512 - Introduction to Java Programming"
+      ],
+      "description": "",
+      "activities": "",
+      "start": {
+        "year": 2010,
+        "month": 12
+      },
+      "end": {
+        "year": 2012,
+        "month": 12
+      },
+      "website": "https://www.clcillinois.edu/",
+      "gpa": ""
+    },
+    {
+      "institution": "University of Iowa",
+      "url": "https://uiowa.edu/",
+      "area": "English, Mass Communications",
+      "studyType": "Bachelor of Arts",
+      "startDate": "2004-12-01",
+      "endDate": "2008-12-01",
+      "score": "3.0",
+      "courses": [],
+      "description": "",
+      "activities": "",
+      "start": {
+        "year": 2004,
+        "month": 12
+      },
+      "end": {
+        "year": 2008,
+        "month": 12
+      },
+      "website": "https://uiowa.edu/",
+      "gpa": "3.0"
+    },
+    {
+      "institution": "Lake Forest High School",
+      "url": "",
+      "area": "General",
+      "studyType": "High School Diploma",
+      "startDate": "2000-12-01",
+      "endDate": "2004-12-01",
+      "score": "",
+      "courses": [],
+      "description": "",
+      "activities": "",
+      "start": {
+        "year": 2000,
+        "month": 12
+      },
+      "end": {
+        "year": 2004,
+        "month": 12
+      },
+      "website": "",
+      "gpa": ""
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Chicago Public Schools",
+      "position": "Early College STEM (ECSS) Mentor",
+      "url": "",
+      "startDate": "2015-03-01",
+      "endDate": "2016-06-01",
+      "summary": "ECSS connects high school, college, and the world of work through dynamic partnerships and pioneers a new vision for college and career readiness. With a unique 9-14 model, students will receive an associate's degree a six year time frame. CPS, the City Colleges and our corporate sponsors will work together to ensure that students have an opportunity to pursue a career in technology and gain skills for the 21st century workforce, enabling them to realize their full potential.",
+      "highlights": [],
+      "location": "Chicago, IL",
+      "start": {
+        "year": 2015,
+        "month": 3
+      },
+      "end": {
+        "year": 2016,
+        "month": 6
+      },
+      "website": ""
+    },
+    {
+      "organization": "Lake Forest Open Lands Association",
+      "position": "Volunteers for Open Lands Education Services (V.O.L.E.S)",
+      "url": "",
+      "startDate": "2011-03-01",
+      "endDate": "2014-05-01",
+      "summary": "A private not-for-profit corporation and land trust that supports land preservation and conservation through educational and community programs and events.\n\nhttp://www.lfola.org/getinvolved/teachaclass.aspx",
+      "highlights": [],
+      "location": "Lake Forest, IL",
+      "start": {
+        "year": 2011,
+        "month": 3
+      },
+      "end": {
+        "year": 2014,
+        "month": 5
+      },
+      "website": ""
+    },
+    {
+      "organization": "Peace Corps",
+      "position": "Education Volunteer",
+      "url": "",
+      "startDate": "2008-08-01",
+      "endDate": "2009-11-01",
+      "summary": "- Researched educational development techniques and applied techniques to educational instruction with local teacher counterpart.\n- Communicated Peace Corps goals and initiatives to Kazakh community members which included journalists, politicians, teachers and law enforcement officials.\n- Created and organized a digital English language laboratory with English language work books, computers, and an Interactive Smart Board.",
+      "highlights": [],
+      "location": "Chernoye, Kazakhstan",
+      "start": {
+        "year": 2008,
+        "month": 8
+      },
+      "end": {
+        "year": 2009,
+        "month": 11
+      },
+      "website": ""
+    }
+  ],
+  "awards": [],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "German",
+      "fluency": "Elementary"
+    },
+    {
+      "language": "Russian",
+      "fluency": "Elementary"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Elementary"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "certificates": [
+    {
+      "name": "Functional Programming Principles in Scala",
+      "issuer": "Coursera Verified Certificates",
+      "date": "2014-06-01",
+      "url": "",
+      "summary": "",
+      "website": ""
+    },
+    {
+      "name": "The Data Scientist’s Toolbox",
+      "issuer": "Coursera",
+      "date": "2014-08-01",
+      "url": "",
+      "summary": "",
+      "website": ""
+    },
+    {
+      "name": "Relativity Certified Administrator (RCA)",
+      "issuer": "kCura",
+      "date": "2014-09-01",
+      "url": "",
+      "summary": "",
+      "website": ""
+    },
+    {
+      "name": "Web Application Architectures",
+      "issuer": "Coursera Verified Certificates",
+      "date": "2014-09-01",
+      "url": "",
+      "summary": "",
+      "website": ""
+    },
+    {
+      "name": "Learn Java Course",
+      "issuer": "Codecademy",
+      "date": "2016-03-01",
+      "url": "",
+      "summary": "",
+      "website": ""
+    },
+    {
+      "name": "Learn AngularJS 1.X Course",
+      "issuer": "Codecademy",
+      "date": "2015-11-01",
+      "url": "",
+      "summary": "",
+      "website": ""
+    }
+  ],
+  "meta": {
+    "note": "This is a combined version of the old and new JSON Resume API to provide maximum compatibility. You will notice duplicated values in different fields.",
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2020-12-29T15:53:00"
+  }
+}

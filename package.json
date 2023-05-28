@@ -4,7 +4,11 @@
   "description": "Repo for Resume",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "resume serve",
+    "validate": "resume validate",
+    "export:pdf": "resume export resume.pdf --format pdf --theme short",
+    "export:html": "resume export resume.html --format html --theme direct",
+    "test": "npm run validate"
   },
   "repository": {
     "type": "git",
@@ -18,5 +22,13 @@
   "homepage": "https://github.com/highlanderkev/resume#readme",
   "devDependencies": {
     "resume-cli": "^3.0.8"
+  },
+  "dependencies": {
+    "jsonresume-theme-compact": "^1.0.4",
+    "jsonresume-theme-direct": "^0.1.1",
+    "jsonresume-theme-elegant": "^1.16.1",
+    "jsonresume-theme-flat": "^0.3.7",
+    "jsonresume-theme-onepage": "^0.0.3",
+    "jsonresume-theme-short": "^0.1.7"
   }
 }
