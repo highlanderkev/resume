@@ -134,7 +134,8 @@
         "Java",
         "Python",
         "Express.js",
-        "TypeScript"
+        "TypeScript",
+        "GraphQL"
       ],
       "rating": 0,
       "yearsOfExperience": 5
@@ -146,21 +147,27 @@
         "Mocha",
         "Jest",
         "JUnit",
-        "Chai"
+        "Chai",
+        "Jasmine",
+        "Karma",
+        "Puppeteer",
+        "Selenium"
       ],
       "rating": 0,
-      "yearsOfExperience": 4
+      "yearsOfExperience": 5
     },
     {
       "name": "Back-End/Database Development",
-      "level": "Intermediate",
+      "level": "Advanced",
       "keywords": [
         "SQL",
         "PostgreSQL",
-        "MySQL"
+        "MySQL",
+        "NoSQL",
+        "MongoDB"
       ],
       "rating": 0,
-      "yearsOfExperience": 3
+      "yearsOfExperience": 5
     },
     {
       "name": "Network Programming",
@@ -170,7 +177,7 @@
         "Scala"
       ],
       "rating": 0,
-      "yearsOfExperience": 2
+      "yearsOfExperience": 4
     },
     {
       "name": "Data Science",
@@ -180,7 +187,7 @@
         "Python"
       ],
       "rating": 0,
-      "yearsOfExperience": 2
+      "yearsOfExperience": 3
     }
   ],
   "projects": [],
