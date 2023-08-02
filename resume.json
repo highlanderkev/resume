@@ -194,14 +194,25 @@
   "work": [
     {
       "name": "Tipico",
-      "location": "Denver, Colorado, United States",
+      "location": "Denver, CO",
       "description": "",
       "position": "Software Engineering Team Lead",
       "url": "https://www.tipico.com/",
       "startDate": "2022-02-01",
       "date": "2022-02-01",
-      "summary": "Tools & Technology: React, Redux, Typescript, JavaScript, Node.js, Express.js, EJS, Mixpanel, GTM, Docker, Kubernetes\nResponsibilities & Achievements:\n- Leading UX Development team for main sportsbook application\n- Coordinating project requirements with stakeholders, product owners, developers, designers and analysts\n- Mentoring other developers in expanding programming skills and methodologies\n- Building out new UX designs that elevate the User Experience across sportsbook and related applications (i.e. portal & casino)\n- Reviewing front end designs and code development to ensure quality standards\n- Partnering with Quality Assurance Engineers to expand the robustness of the testing suite of tools and ensure regressions are consistent and include minimal issues for customers\n- Working with the Infrastructure team to enhance the CICD pipeline\n- Consulting on engineering hiring process to improve talent acquisition\n- Working on team capacity planning with Product Management\n- Performance monitoring and investigating performance degradation",
-      "highlights": [],
+      "summary": "Tools & Technology: React, Redux, Typescript, JavaScript, Node.js, Express.js, EJS, Mixpanel, GTM, Docker, Kubernetes",
+      "highlights": [
+        "Lead a talented UX Development team in the design and development of the main sportsbook application, contributing to enhanced user experiences and increased customer engagement.",
+        "Collaborate closely with stakeholders, product owners, developers, designers, and analysts to coordinate project requirements and ensure successful delivery of software solutions.",
+        "Mentor and guide developers, fostering their growth in programming skills and methodologies to improve overall team performance.",
+        "Drive the creation of innovative UX designs that elevate the user experience across various applications, including the sportsbook, portal, and casino.",
+        "Conduct comprehensive reviews of front-end designs and code development to maintain high quality standards and optimize performance.",
+        "Partner with Quality Assurance Engineers to expand the robustness of the testing suite, ensuring consistent regression testing and minimal customer issues.",
+        "Work closely with the Infrastructure team to enhance the Continuous Integration/Continuous Deployment (CICD) pipeline, enabling streamlined and efficient development processes.",
+        "Provide valuable insights and contribute to the engineering hiring process, improving talent acquisition efforts and ensuring the recruitment of top-notch professionals.",
+        "Collaborate with Product Management on team capacity planning, facilitating resource allocation and optimizing project execution.",
+        "Monitor and investigate performance degradation, proactively identifying and resolving issues to optimize application performance."
+      ],
       "isCurrentRole": true,
       "start": {
         "year": 2022,
@@ -213,14 +224,27 @@
     },
     {
       "name": "Brinks Home Security",
-      "location": "Denver Metropolitan Area",
+      "location": "Denver, CO",
       "description": "",
       "position": "Lead Front-End Engineer",
       "url": "https://brinkshome.com/",
       "startDate": "2020-10-01",
       "endDate": "2022-02-01",
-      "summary": "Tools & Technology: HTML, CSS, Sass, Bootstrap, JavaScript, TypeScript, Vue.js, NuxtJS, Webpack, Contentful, jQuery, Ruby on Rails, Spree, Hubspot, Google Tag Manager, Google Analytics, Jira, Github, Heroku\nResponsibilities & Achievements:\n- Leading the UX Development team for all marketing related activities\n- Coordinating project requirements between stakeholders, developers, consultants, designers and analysts\n- Mentoring other developers in expanding UX skills and methodologies\n- Building out new UX designs that streamline and elevate the user experience\n- Partnering with IT teams to build out infrastructure and workflows for automation of customer lifecycles\n- Reviewing front end designs and code development to ensure quality standards\n- Promoting performance improvements across different tech stacks\n- Technical Point of contact for new UX rebranding efforts\n- Production/DevOps Manager for all front-end code changes\n- Performing code reviews for all front-end code changes\n- Cloud architect, utilizing AWS, Heroku, Git and other Saas applications to host and maintain the brinkshome.com domain along with subdomains\n- Managing analytics tracking of user interactions on site and GTM tag maintenance",
-      "highlights": [],
+      "summary": "Tools & Technology: HTML, CSS, Sass, Bootstrap, JavaScript, TypeScript, Vue.js, NuxtJS, Webpack, Contentful, jQuery, Ruby on Rails, Spree, Hubspot, Google Tag Manager, Google Analytics, Jira, Github, Heroku",
+      "highlights": [
+        "Led the UX Development team responsible for all marketing-related activities, ensuring seamless and engaging user experiences.",
+        "Coordinated project requirements among stakeholders, developers, consultants, designers, and analysts, ensuring effective collaboration and timely project delivery.",
+        "Mentored and guided fellow developers, fostering their growth in UX skills and methodologies to enhance the overall capabilities of the team.",
+        "Developed and implemented new UX designs that streamlined processes and elevated the user experience across various touchpoints.",
+        "Collaborated with IT teams to build infrastructure and workflows for automating customer lifecycles, resulting in improved efficiency and customer satisfaction.",
+        "Conducted comprehensive reviews of front-end designs and code development to uphold quality standards and optimize performance.",
+        "Championed performance improvements across different tech stacks, identifying areas for optimization and implementing relevant enhancements.",
+        "Acted as the technical point of contact for new UX rebranding efforts, ensuring successful execution and alignment with business objectives.",
+        "Managed production and DevOps for all front-end code changes, ensuring smooth deployment and minimizing disruptions.",
+        "Performed code reviews for front-end code changes, maintaining code quality and adhering to best practices.",
+        "Utilized AWS, Heroku, Git, and other Saas applications as a cloud architect to host and maintain the brinkshome.com domain and subdomains.",
+        "Managed analytics tracking of user interactions on the site and maintained Google Tag Manager (GTM) tags to ensure accurate data collection."
+      ],
       "isCurrentRole": false,
       "start": {
         "year": 2020,
@@ -235,14 +259,26 @@
     },
     {
       "name": "Brinks Home Security",
-      "location": "Denver, Colorado, United States",
+      "location": "Chicago, IL",
       "description": "",
       "position": "Senior Front-End Engineer",
       "url": "https://brinkshome.com/",
       "startDate": "2018-11-01",
       "endDate": "2020-10-01",
-      "summary": "Tools & Technology: HTML, CSS, Sass, Bootstrap, JavaScript, TypeScript, Vue.js, NuxtJS, Webpack, Contentful, jQuery, Ruby on Rails, Spree, Hubspot, Google Tag Manager, Google Analytics, Jira, Github, Heroku\nResponsibilities & Achievements:\n- Building out front end website components in vue + html + css + javascript/typescript\n- Migrate legacy jQuery code to vue based implementation\n- Assisted in setting up and guiding the content authoring solution for marketing, plus helping to define the philosophy around it\n- Facilitated the migration of legacy Ruby on Rails platforms to new static web platform powered by Nuxt.js, Contentful and Netlify\n- Helped to architect the custom content modeling integration with the front end system using Contentful, Nuxt.js and Netlify\n- Review code to ensure high quality of standards\n- Work with UX designers to translate designs into functional front end code/markup\n- Diagnose and fix bugs across the technical stack\n- Mentor and guide other developers in front end development\n- Manage projects from ideation through implementation\n- Be brand and UI ambassador to other organization development teams",
-      "highlights": [],
+      "summary": "Tools & Technology: HTML, CSS, Sass, Bootstrap, JavaScript, TypeScript, Vue.js, NuxtJS, Webpack, Contentful, jQuery, Ruby on Rails, Spree, Hubspot, Google Tag Manager, Google Analytics, Jira, Github, Heroku",
+      "highlights": [
+        "Developed front-end website components using Vue.js, HTML, CSS, and JavaScript/TypeScript, delivering high-quality and visually appealing user interfaces.",
+        "Successfully migrated legacy jQuery code to a Vue.js-based implementation, improving code maintainability and enhancing performance.",
+        "Assisted in setting up and guiding the content authoring solution for marketing, contributing to the establishment of efficient content management practices.",
+        "Facilitated the migration of legacy Ruby on Rails platforms to a new static web platform powered by Nuxt.js, Contentful, and Netlify, ensuring a modern and scalable architecture.",
+        "Played a key role in architecting the custom content modeling integration with the front-end system, utilizing Contentful, Nuxt.js, and Netlify to streamline content delivery and enhance user experiences.",
+        "Conducted code reviews to ensure adherence to high-quality standards, optimizing code efficiency and maintainability.",
+        "Collaborated closely with UX designers, translating design concepts into functional front-end code and markup.",
+        "Diagnosed and resolved bugs across the technical stack, ensuring smooth and error-free user experiences.",
+        "Mentored and guided other developers in front-end development, sharing best practices and fostering a collaborative and growth-oriented team environment.",
+        "Managed projects from ideation through implementation, ensuring timely delivery and alignment with project goals and objectives.",
+        "Served as a brand and UI ambassador to other development teams within the organization, promoting consistent design and user interface standards."
+      ],
       "isCurrentRole": false,
       "start": {
         "year": 2018,
@@ -257,14 +293,22 @@
     },
     {
       "name": "TransUnion",
-      "location": "Greater Chicago Area",
+      "location": "Chicago, IL",
       "description": "",
       "position": "Senior UI Developer, Senior Consultant",
       "url": "https://www.transunion.com/",
       "startDate": "2018-05-01",
       "endDate": "2018-11-01",
-      "summary": "Tools & Technology: HTML, CSS, Sass, JavaScript, TypeScript, Angular, Webpack, Web Components, Polymer\nResponsibilities & Achievements:\n- Building new consumer marketing web pages leveraging best in class development techniques\n- Improving UI designs and optimizing front-end code\n- Focused on performance improvements and optimizations on all TU websites\n- Help to implement process improvements and optimized development workflows\n- Helping team integrating Agile methodology into existing workflows\n- Mentoring other developers by reviewing code and providing guidance to high level designs\n- Product Owner for site wide CMS solution",
-      "highlights": [],
+      "summary": "Tools & Technology: HTML, CSS, Sass, JavaScript, TypeScript, Angular, Webpack, Web Components, Polymer",
+      "highlights": [
+        "Built new consumer marketing web pages using HTML, CSS, Sass, JavaScript, and TypeScript, incorporating best-in-class development techniques to enhance user experiences.",
+        "Improved UI designs and optimized front-end code, resulting in visually appealing and performant websites.",
+        "Focused on performance improvements and optimizations across all TransUnion websites, ensuring fast and seamless user interactions.",
+        "Assisted in implementing process improvements and optimized development workflows, enhancing efficiency and productivity.",
+        "Helped the team integrate Agile methodology into existing workflows, promoting iterative development and effective project management.",
+        "Mentored other developers by conducting code reviews and providing guidance on high-level designs, fostering a culture of continuous learning and growth.",
+        "Acted as the Product Owner for the site-wide CMS solution, driving the implementation and management of the content management system to streamline content delivery."
+      ],
       "isCurrentRole": false,
       "start": {
         "year": 2018,
@@ -279,14 +323,19 @@
     },
     {
       "name": "Accenture",
-      "location": "Greater Chicago Area",
+      "location": "Chicago, IL",
       "description": "",
       "position": "Senior Front End Developer, Front End Development Consultant",
       "url": "https://www.accenture.com/",
       "startDate": "2017-07-01",
       "endDate": "2018-05-01",
-      "summary": "Tools & Technology: HTML, CSS, Sass, JavaScript, Angular, Node.js, Express.js, Azure, AWS \nResponsibilities & Achievements:\n- Working with clients to build out new single page web applications in AngularJS.\n- Reviewing code from both external and internal developers to ensure high quality of product and standards.\n- Leveraging knowledge of web standards and best practices to help optimize new projects.",
-      "highlights": [],
+      "summary": "Tools & Technology: HTML, CSS, Sass, JavaScript, Angular, Node.js, Express.js, Azure, AWS",
+      "highlights": [
+        "Collaborated with clients to build new single-page web applications using AngularJS, delivering solutions that met their specific requirements and objectives.",
+        "Conducted comprehensive code reviews for both external and internal developers, ensuring adherence to high-quality standards and best practices.",
+        "Leveraged extensive knowledge of web standards and best practices to optimize new projects, improving performance and user experiences.",
+        "Demonstrated expertise in front-end development, utilizing HTML, CSS, Sass, JavaScript, Angular, Node.js, Express.js, Azure, and AWS to develop robust and scalable applications."
+      ],
       "isCurrentRole": false,
       "start": {
         "year": 2017,
@@ -301,14 +350,21 @@
     },
     {
       "name": "Egencia, an Expedia company",
-      "location": "Greater Chicago Area",
+      "location": "Chicago, IL",
       "description": "",
       "position": "Software Development Engineer II",
       "url": "https://www.egencia.com/",
       "startDate": "2016-06-01",
       "endDate": "2017-07-01",
-      "summary": "Tools & Technology: HTML, CSS, LESS, JavaScript, jQuery, Backbone.js, Handlebars.js, Mocha, Selenium, C++, Java, Spring Boot, Maven, AWS\nResponsibilities & Achievements:\n- Using agile methodology for development of new Egencia Global Home Page.\n- Developing new Fusion (Java Spring) Global Home Page to replace legacy C++ application.\n- Leveraging knowledge of Backbone.js, Handlebars and ECMAscript 2016 to implement new front end design for Global Home Page.\n- Writing new backend Java Services for development of new client side application.\n- Helping to expand on Automation and CICD for faster iteration of features and increasing robustness.",
-      "highlights": [],
+      "summary": "Tools & Technology: HTML, CSS, LESS, JavaScript, jQuery, Backbone.js, Handlebars.js, Mocha, Selenium, C++, Java, Spring Boot, Maven, AWS",
+      "highlights": [
+        "Utilized agile methodology for the development of the new Egencia Global Home Page, ensuring efficient and iterative development processes.",
+        "Developed the new Fusion Global Home Page using Java Spring to replace a legacy C++ application, improving scalability and maintainability.",
+        "Leveraged expertise in Backbone.js, Handlebars.js, and ECMAScript 2016 to implement a new front-end design for the Global Home Page, enhancing user experiences.",
+        "Wrote new backend Java services to support the development of the new client-side application, ensuring seamless integration and functionality.",
+        "Played a key role in expanding automation and CICD (Continuous Integration and Continuous Deployment) practices, facilitating faster iteration of features and increasing the robustness of the development workflow.",
+        "Demonstrated proficiency in a diverse technology stack, including HTML, CSS, LESS, JavaScript, jQuery, Backbone.js, Handlebars.js, Mocha, Selenium, C++, Java, Spring Boot, Maven, and AWS."
+      ],
       "isCurrentRole": false,
       "start": {
         "year": 2016,
@@ -323,14 +379,22 @@
     },
     {
       "name": "kCura",
-      "location": "Chicago",
+      "location": "Chicago, IL",
       "description": "",
       "position": "Software Engineer",
       "url": "https://www.relativity.com/",
       "startDate": "2014-08-01",
       "endDate": "2016-05-01",
-      "summary": "Tools & Technology: HTML, CSS, JavaScript, jQuery, .NET, C#, SQL, Angular.js, C++, ASP.NET, Visual Basic, LINQ \nResponsibilities & Achievements:\n- Developed across full software stack to expand software functionality and features. Wrote new and re-factoring C++, C#, Visual Basic, JavaScript, jQuery and SQL code for feature development.\n- Wrote new and re-factored C++, C#, Visual Basic, JavaScript, jQuery and SQL code for feature development.\n- Leveraged knowledge of MVC, COM, CLR, WebForms, AngularJS, ASP.NET and other technologies to extend and implement functionality.\n- Used agile methodology for development life-cycle along side team of less than ten.\n- Helped develop UI data visualization widgets with AngularJS, D3.js and C3.js for analytics review.\n- Designed endpoints and logic for PDF printing framework to allow for new mass save as pdf option as part of recent software release.\n- Re-factored and extended processing software to handle MS Office Field Codes when imaging documents to provide clients with multiple options for output.\n- Implemented new UI framework which leverages AngularJS to provide a more robust and feature rich experience for Relativity users.",
-      "highlights": [],
+      "summary": "Tools & Technology: HTML, CSS, JavaScript, jQuery, .NET, C#, SQL, Angular.js, C++, ASP.NET, Visual Basic, LINQ",
+      "highlights": [
+        "Developed across the full software stack to expand software functionality and implement new features, utilizing C++, C#, Visual Basic, JavaScript, jQuery, and SQL.",
+        "Leveraged expertise in MVC, COM, CLR, WebForms, AngularJS, and ASP.NET to extend and enhance the software's capabilities.",
+        "Worked within an agile methodology, collaborating with a small team to deliver high-quality software solutions.",
+        "Contributed to the development of UI data visualization widgets using AngularJS, D3.js, and C3.js, enabling advanced analytics review.",
+        "Designed endpoints and logic for a PDF printing framework, allowing users to save documents as PDFs in bulk as part of a recent software release.",
+        "Refactored and extended processing software to handle MS Office Field Codes during document imaging, providing clients with multiple output options.",
+        "Implemented a new UI framework leveraging AngularJS, delivering a more robust and feature-rich experience for Relativity users."
+      ],
       "isCurrentRole": false,
       "start": {
         "year": 2014,
@@ -345,14 +409,19 @@
     },
     {
       "name": "savvo digital sommelier solutions",
-      "location": "",
+      "location": "Chicago, IL",
       "description": "",
       "position": "Software Developer Intern",
       "url": "",
       "startDate": "2014-02-01",
       "endDate": "2014-05-01",
-      "summary": "Tools & Technology: HTML, CSS, JavaScript, C#, .NET, jQuery\nResponsibilities & Achievements:\n- Update front-end design and functionality of main ASP.NET web application.\n- Refactor code and program new designs in HTML, CSS, JavaScript, jquery and C#.",
-      "highlights": [],
+      "summary": "Tools & Technology: HTML, CSS, JavaScript, C#, .NET, jQuery",
+      "highlights": [
+        "Updated the front-end design and functionality of the main ASP.NET web application, improving the user experience and overall appearance.",
+        "Refactored existing codebase to enhance maintainability and scalability.",
+        "Programmed new designs using HTML, CSS, JavaScript, jQuery, and C#, ensuring adherence to best practices and coding standards.",
+        "Collaborated with team members to troubleshoot and resolve issues, ensuring smooth operation of the web application."
+      ],
       "isCurrentRole": false,
       "start": {
         "year": 2014,
@@ -373,8 +442,12 @@
       "url": "https://www.transunion.com/",
       "startDate": "2013-06-01",
       "endDate": "2013-09-01",
-      "summary": "Tools & Technology: iOS, Objective-C, Swift, HTML, CSS, Perl, JavaScript, Java\nResponsibilities & Achievements:\n- Developed an iPhone application for internal server process monitoring and tracking.\n- Updated and added functionality for backend web monitoring applications written in JavaScript, HTML and CSS.\n- Tested and wrote documentation for roll-out of proprietary content delivery network (CDN) to use with international websites.",
-      "highlights": [],
+      "summary": "Tools & Technology: iOS, Objective-C, Swift, HTML, CSS, Perl, JavaScript, Java",
+      "highlights": [
+        "Developed an iPhone application for internal server process monitoring and tracking, enhancing efficiency and productivity.",
+        "Updated and added functionality to backend web monitoring applications using JavaScript, HTML, and CSS, improving performance and user experience.",
+        "Tested and wrote documentation for the roll-out of a proprietary content delivery network (CDN), ensuring smooth integration and utilization for international websites."
+      ],
       "isCurrentRole": false,
       "start": {
         "year": 2013,
@@ -395,8 +468,13 @@
       "url": "https://www.zs.com/",
       "startDate": "2012-10-01",
       "endDate": "2013-05-01",
-      "summary": "Tools & Technology: MS Office Suite, Inventory Management Systems, \nResponsibilities & Achievements:\n- First Point of Contact for Technical Support of Software and Hardware Issues.\n- Assisted users with software and systems questions on a daily basis.\n- Setup and configured cell phones, laptops, iPads and other hardware.\n- Supported IT department initiatives, including roll-outs and hardware updates.",
-      "highlights": [],
+      "summary": "Tools & Technology: MS Office Suite, Internal Inventory Management Systems",
+      "highlights": [
+        "Acted as the first point of contact for technical support, assisting users with software and hardware issues on a daily basis.",
+        "Provided prompt and efficient resolution to user inquiries, ensuring minimal disruption to their workflow.",
+        "Setup and configured cell phones, laptops, iPads, and other hardware, ensuring smooth operation and user satisfaction.",
+        "Supported IT department initiatives, including roll-outs and hardware updates, contributing to the overall improvement of IT infrastructure and operations."
+      ],
       "isCurrentRole": false,
       "start": {
         "year": 2012,
@@ -411,14 +489,19 @@
     },
     {
       "name": "Kirkland & Ellis LLP",
-      "location": "",
+      "location": "Chicago, IL",
       "description": "",
       "position": "Litigation Project Assistant",
       "url": "https://www.kirkland.com/",
       "startDate": "2011-05-01",
       "endDate": "2012-05-01",
-      "summary": "Tools & Technology: MS Office Suite, Relativity, Document Management Systems\nResponsibilities & Achievements:\n- Edited and proofed legal correspondence for court memorandum and briefs.\n- Organized and tracked proceedings across databases (Autonomy & Relativity).\n- Researched and prepared documentation for attorney team review.\n- Coordinated projects for streamlining into larger team work-flow.",
-      "highlights": [],
+      "summary": "Tools & Technology: MS Office Suite, Relativity, Document Management Systems",
+      "highlights": [
+        "Edited and proofed legal correspondence, court memoranda, and briefs, ensuring accuracy and adherence to established standards.",
+        "Organized and tracked proceedings using databases such as Autonomy and Relativity, ensuring efficient document management and easy retrieval of information.",
+        "Conducted research and prepared documentation for attorney team review, contributing to the development of compelling legal strategies.",
+        "Coordinated projects to streamline work processes within larger team workflows, promoting efficiency and collaboration."
+      ],
       "isCurrentRole": false,
       "start": {
         "year": 2011,
@@ -433,14 +516,18 @@
     },
     {
       "name": "IES Abroad",
-      "location": "",
+      "location": "Chicago, IL",
       "description": "",
       "position": "Production Assistant",
       "url": "https://www.iesabroad.org/",
       "startDate": "2010-06-01",
       "endDate": "2011-04-01",
-      "summary": "Tools & Technology: MS Office Suite\nResponsibilities & Achievements:\n- Cataloged inventory of marketing brochures, education catalogs and business reports.\n- Maintained high-speed Cannon and HP printers, fax machines and copiers.\n- Processed and managed outgoing & incoming mail, packages and marketing materials.",
-      "highlights": [],
+      "summary": "Tools & Technology: MS Office Suite",
+      "highlights": [
+        "Cataloged inventory of marketing brochures, education catalogs, and business reports, ensuring accurate tracking and easy access to materials.",
+        "Maintained high-speed Canon and HP printers, fax machines, and copiers, ensuring their optimal performance and addressing any technical issues that arise.",
+        "Processed and managed outgoing and incoming mail, packages, and marketing materials, ensuring timely delivery and efficient workflow."
+      ],
       "isCurrentRole": false,
       "start": {
         "year": 2010,
