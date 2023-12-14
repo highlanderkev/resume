@@ -1,0 +1,173 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{Kevin} \headerlastnamestyle{Westropp} \\
+	\vspace{2mm}
+	{\faEnvelope\ mail@kevinpatrickwestropp.com} | {\faMapMarker\ Denver, CO} | {\faLink\ www.linkedin.com/in/kevinpatrickwestropp}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Experience}
+\begin{cventries}
+	\cventry
+	{Software Engineering Team Lead}
+	{Tipico}
+	{Denver, CO}
+	{February 2022 – August 2023}
+	{\begin{cvitems}
+		\item {Led Development work on main sportsbook (sports betting) application for both web and mobile}
+		\end{cvitems}}
+	\cventry
+	{Lead Front-End Engineer}
+	{Brinks Home Security}
+	{Denver, CO}
+	{October 2020 – February 2022}
+	{\begin{cvitems}
+		\item {Led the UX Development work responsible for all customer facing web initiatives, including managing analytics and hosting solutions}
+		\end{cvitems}}
+	\cventry
+	{Senior Front-End Engineer}
+	{Brinks Home Security}
+	{Chicago, IL}
+	{November 2018 – October 2020}
+	{\begin{cvitems}
+		\item {Spearheaded the development work for migrating from a Ruby on Rails web application to JAMstack based web application using Nuxt hosted on Heroku}
+		\end{cvitems}}
+	\cventry
+	{Senior UI Developer}
+	{TransUnion}
+	{Chicago, IL}
+	{May 2018 – November 2018}
+	{\begin{cvitems}
+		\item {Led development on consumer marketing web pages and oversaw development work on enterprise content management system}
+		\end{cvitems}}
+	\cventry
+	{Senior Front End Developer}
+	{Accenture}
+	{Chicago, IL}
+	{July 2017 – May 2018}
+	{\begin{cvitems}
+		\item {Led design and implementation of custom authentication framework built using Angular and Azure for Consulting Client}
+		\end{cvitems}}
+	\cventry
+	{Software Development Engineer II}
+	{Egencia, an Expedia Company}
+	{Chicago, IL}
+	{June 2016 – July 2017}
+	{\begin{cvitems}
+		\item {Worked on development of new Fusion Global Home Page using Java Spring to replace a legacy C++ application}
+		\end{cvitems}}
+\end{cventries}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{Master of Science (M.S.) in Computer Science}
+	{DePaul University}
+	{Chicago, IL}
+	{May 2012 – December 2014}
+	{GPA: 3.7}
+	\cventry
+	{Bachelor of Arts (B.A.) in English}
+	{University of Iowa}
+	{Iowa City, IA}
+	{August, 2004 – May 2008}
+	{GPA: 3.0}
+\end{cventries}
+
+\vspace{-2mm}
+\cvsection{Skills}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Programming Languages:  & {\skill{ Python, JavaScript, TypeScript, C++, Scala, SQL, Java}} \\
+		Cloud Technology:  & {\skill{ Docker, Kubernetes, AWS, GCP, Azure, Firebase}} \\
+		Web Application Frameworks:  & {\skill{ React, Angular, Nuxt, Express.js, Flask, Django, Spring Framework}} \\
+		DBMS:  & {\skill{ MySQL, PostgreSQL, Microsoft SQL Server, MongoDB, SQLite}} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+\vspace{-7mm}
+\cvsection{Certifications}
+\begin{cventries}
+	\cventry
+	{Coursera \& IBM}
+	{IBM Full Stack Developer Specialization}
+	{Python, Flask, Django, JavaScript, React, SQL, Docker, Kubernetes}
+	{}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{Coursera \& DeepLearning.AI}
+	{Deep Learning Specialization}
+	{Python, TensorFlow, Machine Learning}
+	{}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{Coursera \& DeepLearning.AI}
+	{Machine Learning Specialization}
+	{Python, NumPy, Machine Learning}
+	{}
+	{}
+	
+	\vspace{-5mm}
+\end{cventries}
+
+\ 
+\end{document}

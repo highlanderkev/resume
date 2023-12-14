@@ -1,0 +1,198 @@
+{
+  "selectedTemplate": 2,
+  "headings": {
+    "work": "",
+    "projects": "Certifications",
+    "awards": ""
+  },
+  "basics": {
+    "name": "Kevin Westropp",
+    "location": {
+      "address": "Denver, CO"
+    },
+    "email": "mail@kevinpatrickwestropp.com",
+    "website": "www.linkedin.com/in/kevinpatrickwestropp"
+  },
+  "education": [
+    {
+      "institution": "DePaul University",
+      "location": "Chicago, IL",
+      "area": "Computer Science",
+      "studyType": "Master of Science (M.S.)",
+      "endDate": "December 2014",
+      "gpa": "3.7",
+      "startDate": "May 2012"
+    },
+    {
+      "institution": "University of Iowa",
+      "location": "Iowa City, IA",
+      "studyType": "Bachelor of Arts (B.A.)",
+      "area": "English",
+      "gpa": "3.0",
+      "startDate": "August, 2004",
+      "endDate": "May 2008"
+    }
+  ],
+  "work": [
+    {
+      "company": "Tipico",
+      "location": "Denver, CO",
+      "position": "Software Engineering Team Lead",
+      "website": "",
+      "endDate": "August 2023",
+      "highlights": [
+        "Led Development work on main sportsbook (sports betting) application for both web and mobile"
+      ],
+      "startDate": "February 2022"
+    },
+    {
+      "highlights": [
+        "Led the UX Development work responsible for all customer facing web initiatives, including managing analytics and hosting solutions"
+      ],
+      "company": "Brinks Home Security",
+      "position": "Lead Front-End Engineer",
+      "location": "Denver, CO",
+      "startDate": "October 2020",
+      "endDate": "February 2022"
+    },
+    {
+      "highlights": [
+        "Spearheaded the development work for migrating from a Ruby on Rails web application to JAMstack based web application using Nuxt hosted on Heroku"
+      ],
+      "position": "Senior Front-End Engineer",
+      "location": "Chicago, IL",
+      "startDate": "November 2018",
+      "endDate": "October 2020",
+      "company": "Brinks Home Security"
+    },
+    {
+      "highlights": [
+        "Led development on consumer marketing web pages and oversaw development work on enterprise content management system"
+      ],
+      "company": "TransUnion",
+      "position": "Senior UI Developer",
+      "location": "Chicago, IL",
+      "startDate": "May 2018",
+      "endDate": "November 2018"
+    },
+    {
+      "highlights": [
+        "Led design and implementation of custom authentication framework built using Angular and Azure for Consulting Client"
+      ],
+      "company": "Accenture",
+      "position": "Senior Front End Developer",
+      "location": "Chicago, IL",
+      "startDate": "July 2017",
+      "endDate": "May 2018"
+    },
+    {
+      "highlights": [
+        "Worked on development of new Fusion Global Home Page using Java Spring to replace a legacy C++ application"
+      ],
+      "company": "Egencia, an Expedia Company",
+      "position": "Software Development Engineer II",
+      "location": "Chicago, IL",
+      "startDate": "June 2016",
+      "endDate": "July 2017"
+    }
+  ],
+  "skills": [
+    {
+      "level": "",
+      "keywords": [
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "C++",
+        "Scala",
+        "SQL",
+        "Java"
+      ],
+      "name": "Programming Languages"
+    },
+    {
+      "keywords": [
+        "Docker",
+        "Kubernetes",
+        "AWS",
+        "GCP",
+        "Azure",
+        "Firebase"
+      ],
+      "name": "Cloud Technology"
+    },
+    {
+      "keywords": [
+        "React",
+        "Angular",
+        "Nuxt",
+        "Express.js",
+        "Flask",
+        "Django",
+        "Spring Framework"
+      ],
+      "name": "Web Application Frameworks"
+    },
+    {
+      "keywords": [
+        "MySQL",
+        "PostgreSQL",
+        "Microsoft SQL Server",
+        "MongoDB",
+        "SQLite"
+      ],
+      "name": "DBMS"
+    }
+  ],
+  "projects": [
+    {
+      "name": "IBM Full Stack Developer Specialization",
+      "keywords": [
+        "Python",
+        "Flask",
+        "Django",
+        "JavaScript",
+        "React",
+        "SQL",
+        "Docker",
+        "Kubernetes"
+      ],
+      "description": "Coursera & IBM"
+    },
+    {
+      "keywords": [
+        "Python",
+        "TensorFlow",
+        "Machine Learning"
+      ],
+      "name": "Deep Learning Specialization",
+      "description": "Coursera & DeepLearning.AI"
+    },
+    {
+      "keywords": [
+        "Python",
+        "NumPy",
+        "Machine Learning"
+      ],
+      "name": "Machine Learning Specialization",
+      "description": "Coursera & DeepLearning.AI"
+    }
+  ],
+  "awards": [
+    {
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "work",
+    "education",
+    "skills",
+    "projects",
+    "awards"
+  ]
+}
