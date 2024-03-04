@@ -1,0 +1,107 @@
+Kevin Westropp
+Lead Software Engineer
+
+Denver
+312-687-3379
+
+Experienced software engineer with a proven track record in leading teams, coordinating projects, mentoring developers, and enhancing user experiences. Proficient in various technologies and programming languages including Python, Java, JavaScript, TypeScript and SQL. Holds a Master's degree in Computer Science and has a strong commitment to delivering high-quality code, optimizing performance and enhancing user experience. Also actively involved in volunteer work, mentoring students and contributing to environmental initiatives.
+
+PERSONAL INFORMATION
+  Address: , Denver, 
+  Nationality: 
+  Driving License: 
+  Hobbies: 
+
+SOCIAL PROFILES
+  * LinkedIn: https://www.linkedin.com/in/kevinpatrickwestropp/
+  * Github: https://github.com/highlanderkev
+  * Website: https://highlanderkev.dev
+
+LANGUAGES
+  ★★★★★ Python
+  ★★★★★ JavaScript
+  ★★★★★ TypeScript
+  ★★★★☆ Java
+  ★★★★☆ SQL
+  ★★★☆☆ C++
+  ★★★☆☆ Scala
+  ★★★☆☆ C#
+
+SKILLS
+  ★★★★★ Software Development
+  ★★★★★ Web Application Development
+  ★★★★★ Product Development
+  ★★★★★ UX Development
+  ★★★★☆ Database Management and Development
+  ★★★★☆ Cloud Development
+  ★★★★☆ Agile Project Management
+  ★★★★☆ Leadership
+  ★★★★☆ Teamwork
+
+WORK EXPERIENCE
+  * January 2022 – August 2023
+    Software Engineering Team Lead at Tipico, Denver, CO
+      
+  Led a talented Product Development team in the development and maintenance of the main sportsbook/betting application
+  Collaborate closely with stakeholders, product owners, developers, designers, and analysts to coordinate project requirements and ensure successful delivery of software solutions.
+  Mentor and guide developers, fostering their growth in programming skills and methodologies to improve overall team performance.
+  Drive the creation of innovative UX designs that elevate the user experience across various applications, including the sportsbook, portal, and casino.
+  Conduct comprehensive reviews of front-end designs and code development to maintain high quality standards and optimize performance.
+  Partner with Quality Assurance Engineers to expand the robustness of the testing suite, ensuring consistent regression testing and minimal customer issues.
+  Work closely with the Infrastructure team to enhance the Continuous Integration/Continuous Deployment (CICD) pipeline, enabling streamlined and efficient development processes.
+  Provide valuable insights and contribute to the engineering hiring process, improving talent acquisition efforts and ensuring the recruitment of top-notch professionals.
+  Collaborate with Product Management on team capacity planning, facilitating resource allocation and optimizing project execution.
+  Monitor and investigate performance degradation, proactively identifying and resolving issues to optimize application performance.
+
+
+  * September 2020 – January 2022
+    Lead Front-End Engineer at Brinks Home Security, Denver, CO
+      
+  Led the Development team responsible for all custom facing web based development, ensuring seamless and engaging user experiences.
+  Coordinated project requirements among stakeholders, developers, consultants, designers, and analysts, ensuring effective collaboration and timely project delivery.
+  Mentored and guided fellow developers, fostering their growth through skills development and methodologies to enhance the overall capabilities of the team.
+  Developed and implemented new UX designs that streamlined processes and elevated the user experience across various touchpoints.
+  Collaborated with IT teams to build infrastructure and workflows for automating customer life-cycles, resulting in improved efficiency and customer satisfaction.
+  Conducted comprehensive reviews of front-end designs and code development to uphold quality standards and optimize performance.
+  Championed performance improvements across different tech stacks, identifying areas for optimization and implementing relevant enhancements.
+  Acted as the technical point of contact for new UX rebranding efforts, ensuring successful execution and alignment with business objectives.
+  Managed production and DevOps for all front-end code changes, ensuring smooth deployment and minimizing disruptions.
+  Performed code reviews for code changes, maintaining code quality and adhering to best practices.
+  Utilized AWS, Heroku, Git, and other Saas applications as a cloud architect to host and maintain the brinkshome.com domain and subdomains.
+  Managed analytics tracking of user interactions on the site and maintained Google Tag Manager (GTM) tags to ensure accurate data collection.
+
+
+  * November 2018 – October 2020
+    Senior Front-End Engineer at Brinks Home Security, Chicago, IL
+      
+   Developed new web based components using Vue.js, HTML, CSS, and JavaScript/TypeScript to deliver high-quality user interfaces.
+  Successfully migrated legacy jQuery code to a Vue.js-based implementation, improving code maintainability and enhanced performance.
+  Assisted in the design of the content authoring solution and contributing to the establishment of content management best practices.
+  Facilitated the migration of legacy Ruby on Rails platforms to a new static web platform powered by Nuxt.js, Contentful, and Netlify, ensuring a modern and scalable architecture.
+  Played a key role in architecting the custom content modeling integration with the front-end system, utilizing Contentful, Nuxt.js, and Netlify to streamline content delivery and enhance user experiences.
+  Conducted code reviews to ensure adherence to high-quality standards, optimizing code efficiency and maintainability.
+  Mentored and guided other developers in front-end development, sharing best practices and fostering a collaborative and growth-oriented team environment.
+  Served as a brand and UI ambassador to other development teams within the organization, promoting consistent design and user interface standards.
+
+
+
+EDUCATION
+  * November 2012 – November 2014
+    DePaul University, Chicago, IL Master of Science (M.S.) - Computer Science
+
+    GPA: 3.7
+  * November 2004 – November 2008
+    The University of Iowa, Iowa City, IA Bachelor of Arts (B.A.) - English, Mass Communications
+
+    GPA: 3.0
+
+COURSES
+  * December 2023 – December 2023
+    Deep Learning Specialization, Coursera & DeepLearning.AI
+  * November 2023 – November 2023
+    IBM Full Stack Software Developer Specialization, Coursera & IBM
+  * October 2023 – October 2023
+    Mathematics for Machine Learning and Data Science Specialization, Coursera & DeepLearning.AI
+  * September 2023 – September 2023
+    Machine Learning Specialization, Cousera & DeepLearning.AI
+

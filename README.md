@@ -11,3 +11,8 @@ or
 ```
 $ npm run validate
 ```
+
+## SaaS Links for generating Resume
+
+- [resumetrick.com](https://resumetrick.com)
+- [resume.io](https://resume.io)
