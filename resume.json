@@ -1,12 +1,11 @@
 {
   "basics": {
     "name": "Kevin Westropp",
-    "label": "Lead Software Engineer",
+    "label": "Senior Fullstack Software Engineer",
     "image": "https://avatars.githubusercontent.com/u/2483268?v=4",
-    "email": "mail@kevinpatrickwestropp.com",
-    "phone": "",
+    "email": "mail@highlanderkev.dev",
     "url": "https://www.kevinpatrickwestropp.com",
-    "summary": "Experienced software engineer and front-end developer with a proven track record in leading teams, coordinating projects, mentoring developers, and enhancing user experiences. Proficient in various technologies including React, Vue.js, JavaScript, HTML, CSS, and TypeScript. Holds a Master's degree in Computer Science and has a strong commitment to delivering high-quality code and optimizing performance. Also actively involved in volunteer work, mentoring students and contributing to environmental initiatives.",
+    "summary": "Highly accomplished Senior Fullstack Software Engineer with 8+ years of expertise in building scalable, serverless architectures on AWS with TypeScript and Python. Proven leader of cross-functional teams, consistently delivering innovative customer-first experiences and high-impact software solutions that enhance user engagement and drive significant business growth. Passionate about leveraging cutting-edge technologies and AI solutions to transform product experiences in dynamic environments.",
     "profiles": [
       {
         "network": "gitconnected",
@@ -20,8 +19,8 @@
       },
       {
         "network": "LinkedIn",
-        "url": "https://www.linkedin.com/in/kevinpatrickwestropp/",
-        "username": "kevinpatrickwestropp"
+        "url": "https://linkedin.com/in/kevinwestropp",
+        "username": "kevinwestropp"
       }
     ],
     "headline": "Developer",
@@ -39,159 +38,125 @@
   },
   "skills": [
     {
-      "name": "Front-End/Web Development",
+      "name": "Programming Languages",
       "level": "Expert",
       "keywords": [
-        "HTML",
-        "CSS",
-        "JavaScript",
         "TypeScript",
-        "jQuery",
-        "SCSS/SASS",
-        "Less",
-        "XML"
-      ],
-      "rating": 0,
-      "yearsOfExperience": 8
-    },
-    {
-      "name": "Web Application Development",
-      "level": "Expert",
-      "keywords": [
-        "React",
-        "Redux",
-        "Next.js",
-        "Angular",
-        "Vue",
-        "Nuxt",
-        "Ruby on Rails",
-        "Django",
-        "Backbone.js",
-        "Web2py",
+        "Python",
         "Node.js"
       ],
       "rating": 0,
       "yearsOfExperience": 8
     },
     {
-      "name": "Software Development",
+      "name": "Cloud Platforms & Services",
       "level": "Expert",
       "keywords": [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "Java",
-        "Dart",
-        "Golang",
-        "Scala"
-      ],
-      "rating": 0,
-      "yearsOfExperience": 8
-    },
-    {
-      "name": "Agile Project Management",
-      "level": "Advanced",
-      "keywords": [
-        "Scrum",
-        "Kanban",
-        "Jira"
+        "AWS (Lambda, Fargate, API Gateway, S3)",
+        "Heroku",
+        "Cloudflare"
       ],
       "rating": 0,
       "yearsOfExperience": 7
     },
     {
-      "name": "DevOps",
+      "name": "Databases",
       "level": "Advanced",
       "keywords": [
-        "Git",
-        "Github Actions",
-        "Jenkins",
-        "CircleCI"
+        "Postgres",
+        "SQL"
+      ],
+      "rating": 0,
+      "yearsOfExperience": 8
+    },
+    {
+      "name": "Frontend Frameworks",
+      "level": "Expert",
+      "keywords": [
+        "React",
+        "Vue.js",
+        "Bootstrap"
+      ],
+      "rating": 0,
+      "yearsOfExperience": 8
+    },
+    {
+      "name": "Architecture & Paradigms",
+      "level": "Expert",
+      "keywords": [
+        "Serverless Architecture",
+        "Microservices",
+        "RESTful APIs",
+        "Agentic Patterns"
       ],
       "rating": 0,
       "yearsOfExperience": 6
     },
     {
-      "name": "Cloud Development",
+      "name": "AI/ML & LLM",
       "level": "Advanced",
       "keywords": [
-        "Microsoft Azure",
-        "Amazon Web Services (AWS)",
-        "Google Cloud Platform (gcp)",
-        "Firebase"
-      ],
-      "rating": 0,
-      "yearsOfExperience": 5
-    },
-    {
-      "name": "API Development",
-      "level": "Advanced",
-      "keywords": [
-        ".NET",
-        "Dart",
-        "Node.js",
-        "Golang",
-        "Java",
-        "Python",
-        "Express.js",
-        "TypeScript",
-        "GraphQL"
-      ],
-      "rating": 0,
-      "yearsOfExperience": 5
-    },
-    {
-      "name": "Test Driven Development",
-      "level": "Advanced",
-      "keywords": [
-        "Mocha",
-        "Jest",
-        "JUnit",
-        "Chai",
-        "Jasmine",
-        "Karma",
-        "Puppeteer",
-        "Selenium"
-      ],
-      "rating": 0,
-      "yearsOfExperience": 5
-    },
-    {
-      "name": "Back-End/Database Development",
-      "level": "Advanced",
-      "keywords": [
-        "SQL",
-        "PostgreSQL",
-        "MySQL",
-        "NoSQL",
-        "MongoDB"
-      ],
-      "rating": 0,
-      "yearsOfExperience": 5
-    },
-    {
-      "name": "Network Programming",
-      "level": "Advanced",
-      "keywords": [
-        "Java",
-        "Scala"
-      ],
-      "rating": 0,
-      "yearsOfExperience": 4
-    },
-    {
-      "name": "Data Science",
-      "level": "Intermediate",
-      "keywords": [
-        "R",
-        "Python"
+        "AI/ML",
+        "Deep Learning",
+        "LLM Systems",
+        "Prompt Engineering"
       ],
       "rating": 0,
       "yearsOfExperience": 3
+    },
+    {
+      "name": "DevOps & Tools",
+      "level": "Advanced",
+      "keywords": [
+        "CI/CD",
+        "Docker",
+        "Git"
+      ],
+      "rating": 0,
+      "yearsOfExperience": 8
+    },
+    {
+      "name": "Methodologies & Practices",
+      "level": "Expert",
+      "keywords": [
+        "Agile Leadership",
+        "Cross-functional Collaboration",
+        "Mentorship",
+        "Technical Strategy",
+        "Code Review",
+        "Performance Optimization",
+        "User Analytics"
+      ],
+      "rating": 0,
+      "yearsOfExperience": 8
     }
   ],
   "projects": [],
   "work": [
+    {
+      "name": "CoBank",
+      "location": "Denver, CO",
+      "description": "",
+      "position": "Senior Software Engineer, Full Stack",
+      "url": "https://www.cobank.com/",
+      "startDate": "2024-05-01",
+      "summary": "Tools & Technology: React, Node.js, Python, AWS Lambda, PostgreSQL, CI/CD, Microservices",
+      "highlights": [
+        "Engineered scalable and modular React components for the cutting-edge HarvestHub web application, significantly enhancing user experience and improving code maintainability.",
+        "Architected and implemented robust RESTful APIs using Node.js and Python, leveraging AWS Lambda for serverless deployment to optimize performance and reduce operational costs.",
+        "Designed and optimized complex SQL queries for PostgreSQL database, ensuring efficient data retrieval and manipulation for backend services.",
+        "Contributed to high-level technical strategy sessions, collaborating with cross-functional teams to drive project planning, resource allocation, and architectural decisions.",
+        "Implemented modern development methodologies, including CI/CD pipelines and microservices architecture, to align with industry best practices and emerging technologies."
+      ],
+      "isCurrentRole": true,
+      "start": {
+        "year": 2024,
+        "month": 5
+      },
+      "end": null,
+      "company": "CoBank",
+      "website": "https://www.cobank.com/"
+    },
     {
       "name": "Tipico",
       "location": "Denver, CO",
@@ -213,7 +178,15 @@
         "Provide valuable insights and contribute to the engineering hiring process, improving talent acquisition efforts and ensuring the recruitment of top-notch professionals.",
         "Collaborate with Product Management on team capacity planning, facilitating resource allocation and optimizing project execution.",
         "Monitor and investigate performance degradation, proactively identifying and resolving issues to optimize application performance.",
-        "Spearheaded a major overhaul of the data analytics pipeline, starting with front-end customer engagement tracking to better inform development resourcing."
+        "Spearheaded a major overhaul of the data analytics pipeline, starting with front-end customer engagement tracking to better inform development resourcing.",
+        "Spearheaded the development of an intuitive application orchestration platform, seamlessly integrating with diverse enterprise systems, resulting in a quantifiable reduction in software deployment time and costs.",
+        "Orchestrated performance optimization initiatives for the core sports betting application, achieving faster response times and enhancing user experience.",
+        "Implemented a robust mentorship program that accelerated project delivery timelines and boosted team cohesion, significantly increasing individual productivity.",
+        "Led the redesign of web and mobile interfaces, driving increased user engagement across sports betting, main website, and casino game platforms, ultimately improving customer retention and satisfaction.",
+        "Conducted comprehensive front-end audits, resulting in a 10% decrease in page load times and improved UI responsiveness, enhancing user satisfaction and supporting business growth.",
+        "Collaborated with QA teams to enhance testing protocols, reducing customer-reported issues and elevating overall product quality.",
+        "Partnered with infrastructure teams to streamline deployment processes, reducing release-related incidents and improving system reliability.",
+        "Refined talent acquisition strategies, successfully onboarding high-caliber engineers, strengthening team capabilities and contributing to project success rates."
       ],
       "isCurrentRole": false,
       "start": {
@@ -249,7 +222,12 @@
         "Performed code reviews for front-end code changes, maintaining code quality and adhering to best practices.",
         "Utilized AWS, Heroku, Git, and other Saas applications as a cloud architect to host and maintain the brinkshome.com domain and subdomains.",
         "Managed analytics tracking of user interactions on the site and maintained Google Tag Manager (GTM) tags to ensure accurate data collection.",
-        "Sole developer responsible for managing and migrating the full Django website from company acquisition to existing customer solution."
+        "Sole developer responsible for managing and migrating the full Django website from company acquisition to existing customer solution.",
+        "Spearheaded a team responsible for developing and maintaining cutting-edge customer-facing web applications using Vue.js, Bootstrap, and AWS.",
+        "Orchestrated cross-functional collaboration, ensuring seamless project execution and timely deliveries across multiple initiatives.",
+        "Mentored and coached junior developers, fostering skill growth and enhancing overall team performance.",
+        "Conceptualized and implemented innovative UI/UX designs, streamlining processes and improving user experience across multiple platforms.",
+        "Conducted thorough code reviews and performance audits to maintain high-quality standards and optimize frontend performance."
       ],
       "isCurrentRole": false,
       "start": {
@@ -283,7 +261,12 @@
         "Diagnosed and resolved bugs across the technical stack, ensuring smooth and error-free user experiences.",
         "Mentored and guided other developers in front-end development, sharing best practices and fostering a collaborative and growth-oriented team environment.",
         "Managed projects from ideation through implementation, ensuring timely delivery and alignment with project goals and objectives.",
-        "Served as a brand and UI ambassador to other development teams within the organization, promoting consistent design and user interface standards."
+        "Served as a brand and UI ambassador to other development teams within the organization, promoting consistent design and user interface standards.",
+        "Led development teams in optimizing user interfaces for efficiency, ensuring high performance and responsiveness.",
+        "Ensured cross-platform compatibility for all web applications, expanding accessibility and user reach.",
+        "Collaborated effectively with designers and backend developers to deliver seamless and integrated user experiences.",
+        "Improved code quality through rigorous testing and comprehensive code reviews, contributing to high-performing and scalable web applications.",
+        "Implemented best practices for front-end development, enhancing efficiency and maintainability of the codebase."
       ],
       "isCurrentRole": false,
       "start": {
@@ -313,7 +296,12 @@
         "Assisted in implementing process improvements and optimized development workflows, enhancing efficiency and productivity.",
         "Helped the team integrate Agile methodology into existing workflows, promoting iterative development and effective project management.",
         "Mentored other developers by conducting code reviews and providing guidance on high-level designs, fostering a culture of continuous learning and growth.",
-        "Acted as the Product Owner for the site-wide CMS solution, driving the implementation and management of the content management system to streamline content delivery."
+        "Acted as the Product Owner for the site-wide CMS solution, driving the implementation and management of the content management system to streamline content delivery.",
+        "Led the design and development of critical user interfaces, ensuring intuitive and responsive applications.",
+        "Optimized application performance, contributing to enhanced user experience and system efficiency.",
+        "Collaborated effectively with cross-functional teams to integrate UI solutions seamlessly.",
+        "Delivered high-quality, responsive applications that met client satisfaction and project deadlines.",
+        "Applied advanced UI/UX principles to improve overall user experience and application usability."
       ],
       "isCurrentRole": false,
       "start": {
@@ -342,7 +330,12 @@
         "Leveraged extensive knowledge of web standards and best practices to optimize new projects, improving performance and user experiences.",
         "Demonstrated expertise in front-end development, utilizing HTML, CSS, Sass, JavaScript, Angular, Node.js, Express.js, Azure, and AWS to develop robust and scalable applications.",
         "Led the design and implementation of a custom authentication framework using Angular and Azure.",
-        "Established a best practices working group for developers across the organization to share ideas and expand technical skills."
+        "Established a best practices working group for developers across the organization to share ideas and expand technical skills.",
+        "Specialized in creating highly responsive and user-friendly web interfaces, enhancing overall accessibility and engagement.",
+        "Optimized front-end performance and implemented industry best practices for robust application development.",
+        "Led cross-functional teams and mentored junior developers, fostering skill development and team cohesion.",
+        "Collaborated with stakeholders to deliver high-quality, cutting-edge projects on time and within budget.",
+        "Contributed to the development of innovative web solutions, ensuring adherence to design and functional specifications."
       ],
       "isCurrentRole": false,
       "start": {
@@ -372,7 +365,12 @@
         "Wrote new backend Java services to support the development of the new client-side application, ensuring seamless integration and functionality.",
         "Played a key role in expanding automation and CICD (Continuous Integration and Continuous Deployment) practices, facilitating faster iteration of features and increasing the robustness of the development workflow.",
         "Demonstrated proficiency in a diverse technology stack, including HTML, CSS, LESS, JavaScript, jQuery, Backbone.js, Handlebars.js, Mocha, Selenium, C++, Java, Spring Boot, Maven, and AWS.",
-        "Designed workshops to expand developers' front-end engineering expertise and incorporate new ECMAScript features into front-end architecture."
+        "Designed workshops to expand developers' front-end engineering expertise and incorporate new ECMAScript features into front-end architecture.",
+        "Designed, developed, and optimized scalable software systems, contributing to significant improvements in system architecture.",
+        "Collaborated with cross-functional teams to enhance product functionality and deliver new features.",
+        "Ensured high code quality and performed rigorous testing to maintain system stability and reliability.",
+        "Led critical projects and addressed complex technical challenges, driving successful project outcomes.",
+        "Contributed to improving overall development processes and best practices within the engineering team."
       ],
       "isCurrentRole": false,
       "start": {
@@ -403,7 +401,12 @@
         "Designed endpoints and logic for a PDF printing framework, allowing users to save documents as PDFs in bulk as part of a recent software release.",
         "Refactored and extended processing software to handle MS Office Field Codes during document imaging, providing clients with multiple output options.",
         "Implemented a new UI framework leveraging AngularJS, delivering a more robust and feature-rich experience for Relativity users.",
-        "Facilitated and participated in company hackathons to expand cross-collaboration among engineers and experiment with company systems to develop innovative solutions."
+        "Facilitated and participated in company hackathons to expand cross-collaboration among engineers and experiment with company systems to develop innovative solutions.",
+        "Developed, tested, and maintained robust software applications throughout their lifecycle.",
+        "Collaborated with cross-functional teams to deliver high-quality products that met user requirements.",
+        "Utilized various programming languages and tools effectively to solve complex technical problems.",
+        "Ensured software adherence to user requirements and industry standards, maintaining high product quality.",
+        "Contributed to the continuous improvement of software development processes and methodologies."
       ],
       "isCurrentRole": false,
       "start": {
@@ -789,7 +792,7 @@
       "website": ""
     },
     {
-      "name": "The Data Scientist’s Toolbox",
+      "name": "The Data Scientist\u2019s Toolbox",
       "issuer": "Coursera",
       "date": "2014-08-01",
       "url": "",
@@ -832,47 +835,55 @@
       "name": "Machine Learning Specialization",
       "issuer": "Coursera & DeepLearning.AI",
       "date": "2023-09-01",
-      "url": "",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/TEYSV2N5QY6U",
       "summary": "",
-      "website": ""
+      "website": "https://www.coursera.org/account/accomplishments/specialization/certificate/TEYSV2N5QY6U"
     },
     {
       "name": "IBM Full Stack Software Developer Specialization",
       "issuer": "Coursera & IBM",
       "date": "2023-11-01",
-      "url": "",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/RMRKU5MVQGU4",
       "summary": "",
-      "website": ""
+      "website": "https://www.coursera.org/account/accomplishments/specialization/certificate/RMRKU5MVQGU4"
     },
     {
       "name": "Mathematics for Machine Learning and Data Science Specialization",
       "issuer": "Coursera & DeepLearning.AI",
       "date": "2023-10-01",
-      "url": "",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/FSSLFFKQSCZQ",
       "summary": "",
-      "website": ""
+      "website": "https://www.coursera.org/account/accomplishments/specialization/certificate/FSSLFFKQSCZQ"
     },
     {
       "name": "Deep Learning Specialization",
       "issuer": "Coursera & DeepLearning.AI",
       "date": "2023-12-01",
-      "url": "",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/W2GT9XF65DXR",
       "summary": "",
-      "website": ""
+      "website": "https://www.coursera.org/account/accomplishments/specialization/W2GT9XF65DXR"
+    },
+    {
+      "name": "IBM Data Engineering Specialization",
+      "issuer": "IBM",
+      "date": "2024-03-01",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/MG7FMB59M7W6",
+      "summary": "",
+      "website": "https://www.coursera.org/account/accomplishments/specialization/MG7FMB59M7W6"
     },
     {
       "name": "Meta Database Engineer Specialization",
       "issuer": "Coursera & Meta",
       "date": "2024-01-01",
-      "url": "",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/MRMSTNA3JSDF",
       "summary": "",
-      "website": ""
+      "website": "https://www.coursera.org/account/accomplishments/specialization/MRMSTNA3JSDF"
     }
   ],
   "meta": {
     "note": "This is a combined version of the old and new JSON Resume API to provide maximum compatibility. You will notice duplicated values in different fields.",
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",
-    "lastModified": "2026-06-22T01:53:00"
+    "lastModified": "2026-06-22T03:06:00"
   }
 }
