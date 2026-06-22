@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Kevin Westropp",
-    "label": "Software Engineering Team Lead at Tipico",
+    "label": "Lead Software Engineer",
     "image": "https://avatars.githubusercontent.com/u/2483268?v=4",
     "email": "mail@kevinpatrickwestropp.com",
     "phone": "",
@@ -26,7 +26,7 @@
     ],
     "headline": "Developer",
     "blog": null,
-    "yearsOfExperience": 10,
+    "yearsOfExperience": 12,
     "username": "highlanderkev",
     "locationAsString": "Denver, Colorado",
     "region": "Denver, Colorado",
@@ -199,10 +199,11 @@
       "position": "Software Engineering Team Lead",
       "url": "https://www.tipico.com/",
       "startDate": "2022-02-01",
+      "endDate": "2023-08-01",
       "date": "2022-02-01",
       "summary": "Tools & Technology: React, Redux, Typescript, JavaScript, Node.js, Express.js, EJS, Mixpanel, GTM, Docker, Kubernetes",
       "highlights": [
-        "Lead a talented UX Development team in the design and development of the main sportsbook application, contributing to enhanced user experiences and increased customer engagement.",
+        "Led a talented Product Development team in the development and maintenance of the main sportsbook/betting application, contributing to enhanced user experiences and increased customer engagement.",
         "Collaborate closely with stakeholders, product owners, developers, designers, and analysts to coordinate project requirements and ensure successful delivery of software solutions.",
         "Mentor and guide developers, fostering their growth in programming skills and methodologies to improve overall team performance.",
         "Drive the creation of innovative UX designs that elevate the user experience across various applications, including the sportsbook, portal, and casino.",
@@ -211,14 +212,18 @@
         "Work closely with the Infrastructure team to enhance the Continuous Integration/Continuous Deployment (CICD) pipeline, enabling streamlined and efficient development processes.",
         "Provide valuable insights and contribute to the engineering hiring process, improving talent acquisition efforts and ensuring the recruitment of top-notch professionals.",
         "Collaborate with Product Management on team capacity planning, facilitating resource allocation and optimizing project execution.",
-        "Monitor and investigate performance degradation, proactively identifying and resolving issues to optimize application performance."
+        "Monitor and investigate performance degradation, proactively identifying and resolving issues to optimize application performance.",
+        "Spearheaded major overhaul of data analytics pipeline starting with customer engagement in the front end to help drive project development resources."
       ],
-      "isCurrentRole": true,
+      "isCurrentRole": false,
       "start": {
         "year": 2022,
         "month": 2
       },
-      "end": {},
+      "end": {
+        "year": 2023,
+        "month": 8
+      },
       "company": "Tipico",
       "website": "https://www.tipico.com/"
     },
@@ -243,7 +248,8 @@
         "Managed production and DevOps for all front-end code changes, ensuring smooth deployment and minimizing disruptions.",
         "Performed code reviews for front-end code changes, maintaining code quality and adhering to best practices.",
         "Utilized AWS, Heroku, Git, and other Saas applications as a cloud architect to host and maintain the brinkshome.com domain and subdomains.",
-        "Managed analytics tracking of user interactions on the site and maintained Google Tag Manager (GTM) tags to ensure accurate data collection."
+        "Managed analytics tracking of user interactions on the site and maintained Google Tag Manager (GTM) tags to ensure accurate data collection.",
+        "Sole developer responsible for managing and migrating the full Django website from company acquisition to existing customer solution."
       ],
       "isCurrentRole": false,
       "start": {
@@ -334,7 +340,9 @@
         "Collaborated with clients to build new single-page web applications using AngularJS, delivering solutions that met their specific requirements and objectives.",
         "Conducted comprehensive code reviews for both external and internal developers, ensuring adherence to high-quality standards and best practices.",
         "Leveraged extensive knowledge of web standards and best practices to optimize new projects, improving performance and user experiences.",
-        "Demonstrated expertise in front-end development, utilizing HTML, CSS, Sass, JavaScript, Angular, Node.js, Express.js, Azure, and AWS to develop robust and scalable applications."
+        "Demonstrated expertise in front-end development, utilizing HTML, CSS, Sass, JavaScript, Angular, Node.js, Express.js, Azure, and AWS to develop robust and scalable applications.",
+        "Led design and implementation of custom authentication framework using Angular and Azure.",
+        "Established a best practices working group for developers across the organization to share ideas and expand technical skills."
       ],
       "isCurrentRole": false,
       "start": {
@@ -363,7 +371,8 @@
         "Leveraged expertise in Backbone.js, Handlebars.js, and ECMAScript 2016 to implement a new front-end design for the Global Home Page, enhancing user experiences.",
         "Wrote new backend Java services to support the development of the new client-side application, ensuring seamless integration and functionality.",
         "Played a key role in expanding automation and CICD (Continuous Integration and Continuous Deployment) practices, facilitating faster iteration of features and increasing the robustness of the development workflow.",
-        "Demonstrated proficiency in a diverse technology stack, including HTML, CSS, LESS, JavaScript, jQuery, Backbone.js, Handlebars.js, Mocha, Selenium, C++, Java, Spring Boot, Maven, and AWS."
+        "Demonstrated proficiency in a diverse technology stack, including HTML, CSS, LESS, JavaScript, jQuery, Backbone.js, Handlebars.js, Mocha, Selenium, C++, Java, Spring Boot, Maven, and AWS.",
+        "Designed workshops to help expand developers' front-end engineering expertise and to utilize new ECMAScript features into front-end architecture."
       ],
       "isCurrentRole": false,
       "start": {
@@ -393,7 +402,8 @@
         "Contributed to the development of UI data visualization widgets using AngularJS, D3.js, and C3.js, enabling advanced analytics review.",
         "Designed endpoints and logic for a PDF printing framework, allowing users to save documents as PDFs in bulk as part of a recent software release.",
         "Refactored and extended processing software to handle MS Office Field Codes during document imaging, providing clients with multiple output options.",
-        "Implemented a new UI framework leveraging AngularJS, delivering a more robust and feature-rich experience for Relativity users."
+        "Implemented a new UI framework leveraging AngularJS, delivering a more robust and feature-rich experience for Relativity users.",
+        "Facilitated and participated in company hackathons to expand engineer cross-collaboration and experiment with company systems to come up with innovative solutions."
       ],
       "isCurrentRole": false,
       "start": {
@@ -761,6 +771,10 @@
     {
       "language": "Spanish",
       "fluency": "Elementary"
+    },
+    {
+      "language": "Kazakh",
+      "fluency": "Elementary"
     }
   ],
   "interests": [],
@@ -813,12 +827,52 @@
       "url": "",
       "summary": "",
       "website": ""
+    },
+    {
+      "name": "Machine Learning Specialization",
+      "issuer": "Coursera & DeepLearning.AI",
+      "date": "2023-09-01",
+      "url": "",
+      "summary": "",
+      "website": ""
+    },
+    {
+      "name": "IBM Full Stack Software Developer Specialization",
+      "issuer": "Coursera & IBM",
+      "date": "2023-11-01",
+      "url": "",
+      "summary": "",
+      "website": ""
+    },
+    {
+      "name": "Mathematics for Machine Learning and Data Science Specialization",
+      "issuer": "Coursera & DeepLearning.AI",
+      "date": "2023-10-01",
+      "url": "",
+      "summary": "",
+      "website": ""
+    },
+    {
+      "name": "Deep Learning Specialization",
+      "issuer": "Coursera & DeepLearning.AI",
+      "date": "2023-12-01",
+      "url": "",
+      "summary": "",
+      "website": ""
+    },
+    {
+      "name": "Meta Database Engineer Specialization",
+      "issuer": "Coursera & Meta",
+      "date": "2024-01-01",
+      "url": "",
+      "summary": "",
+      "website": ""
     }
   ],
   "meta": {
     "note": "This is a combined version of the old and new JSON Resume API to provide maximum compatibility. You will notice duplicated values in different fields.",
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",
-    "lastModified": "2020-12-29T15:53:00"
+    "lastModified": "2026-06-22T01:53:00"
   }
 }
