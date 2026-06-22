@@ -341,7 +341,7 @@
         "Conducted comprehensive code reviews for both external and internal developers, ensuring adherence to high-quality standards and best practices.",
         "Leveraged extensive knowledge of web standards and best practices to optimize new projects, improving performance and user experiences.",
         "Demonstrated expertise in front-end development, utilizing HTML, CSS, Sass, JavaScript, Angular, Node.js, Express.js, Azure, and AWS to develop robust and scalable applications.",
-        "Led design and implementation of custom authentication framework using Angular and Azure.",
+        "Led the design and implementation of a custom authentication framework using Angular and Azure."
         "Established a best practices working group for developers across the organization to share ideas and expand technical skills."
       ],
       "isCurrentRole": false,
@@ -372,7 +372,7 @@
         "Wrote new backend Java services to support the development of the new client-side application, ensuring seamless integration and functionality.",
         "Played a key role in expanding automation and CICD (Continuous Integration and Continuous Deployment) practices, facilitating faster iteration of features and increasing the robustness of the development workflow.",
         "Demonstrated proficiency in a diverse technology stack, including HTML, CSS, LESS, JavaScript, jQuery, Backbone.js, Handlebars.js, Mocha, Selenium, C++, Java, Spring Boot, Maven, and AWS.",
-        "Designed workshops to help expand developers' front-end engineering expertise and to utilize new ECMAScript features into front-end architecture."
+        "Designed workshops to expand developers' front-end engineering expertise and incorporate new ECMAScript features into front-end architecture."
       ],
       "isCurrentRole": false,
       "start": {
@@ -403,7 +403,7 @@
         "Designed endpoints and logic for a PDF printing framework, allowing users to save documents as PDFs in bulk as part of a recent software release.",
         "Refactored and extended processing software to handle MS Office Field Codes during document imaging, providing clients with multiple output options.",
         "Implemented a new UI framework leveraging AngularJS, delivering a more robust and feature-rich experience for Relativity users.",
-        "Facilitated and participated in company hackathons to expand engineer cross-collaboration and experiment with company systems to come up with innovative solutions."
+        "Facilitated and participated in company hackathons to expand cross-collaboration among engineers and experiment with company systems to develop innovative solutions."
       ],
       "isCurrentRole": false,
       "start": {
