@@ -8,6 +8,11 @@
     "validate": "resume validate",
     "export:pdf": "resume export resume.pdf --format pdf --theme short",
     "export:html": "resume export resume.html --format html --theme direct",
+    "extract": "node extract-resumes.js",
+    "parse": "node resume-parser.js",
+    "pipeline": "node pipeline.js",
+    "pipeline:clean": "rm -rf extracted_data && mkdir -p extracted_data",
+    "pipeline:full": "npm run pipeline:clean && npm run pipeline",
     "test": "npm run validate"
   },
   "repository": {
@@ -21,6 +26,8 @@
   },
   "homepage": "https://github.com/highlanderkev/resume#readme",
   "devDependencies": {
+    "pdf-parse": "^2.4.5",
+    "pdfjs-dist": "^6.1.200",
     "resume-cli": "^3.0.8"
   },
   "dependencies": {
