@@ -1,0 +1,125 @@
+name: Update Resume
+
+on:
+  workflow_dispatch:
+    inputs:
+      patch:
+        description: >
+          JSON Patch document (RFC 6902) as a JSON array, e.g.
+          [{"op":"replace","path":"/basics/summary","value":"New summary."}]
+        required: false
+        type: string
+      merge:
+        description: >
+          Partial resume object to deep-merge into resume.json (alternative to patch).
+          Provide either 'patch' or 'merge', not both.
+        required: false
+        type: string
+      validate_only:
+        description: 'Run validate without writing (dry-run)'
+        required: false
+        default: 'false'
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-resume:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Apply patch to resume.json
+        if: ${{ inputs.patch != '' && inputs.merge == '' && inputs.validate_only == 'false' }}
+        run: |
+          node - <<'EOF'
+          const fs = require('fs');
+          const patch = JSON.parse(process.env.PATCH_INPUT);
+          const resume = JSON.parse(fs.readFileSync('resume.json', 'utf-8'));
+
+          function getPointer(obj, pointer) {
+            if (pointer === '') return obj;
+            const parts = pointer.replace(/^\//, '').split('/').map(p => p.replace(/~1/g, '/').replace(/~0/g, '~'));
+            let cur = obj;
+            for (let i = 0; i < parts.length - 1; i++) {
+              cur = cur[parts[i]];
+              if (cur == null) throw new Error('Path not found: ' + pointer);
+            }
+            return { parent: cur, key: parts[parts.length - 1] };
+          }
+
+          function applyPatch(doc, ops) {
+            const target = JSON.parse(JSON.stringify(doc));
+            for (const op of ops) {
+              const { path: ptr, from, value } = op;
+              switch (op.op) {
+                case 'add': { const r = getPointer(target, ptr); Array.isArray(r.parent) ? r.parent.splice(r.key === '-' ? r.parent.length : parseInt(r.key), 0, value) : (r.parent[r.key] = value); break; }
+                case 'remove': { const r = getPointer(target, ptr); Array.isArray(r.parent) ? r.parent.splice(parseInt(r.key), 1) : delete r.parent[r.key]; break; }
+                case 'replace': { const r = getPointer(target, ptr); r.parent[r.key] = value; break; }
+                case 'test': { const r = getPointer(target, ptr); if (JSON.stringify(r.parent[r.key]) !== JSON.stringify(value)) throw new Error('Test failed at ' + ptr); break; }
+              }
+            }
+            return target;
+          }
+
+          const patched = applyPatch(resume, patch);
+          fs.writeFileSync('resume.json', JSON.stringify(patched, null, 2) + '\n');
+          console.log('Patch applied successfully.');
+          EOF
+        env:
+          PATCH_INPUT: ${{ inputs.patch }}
+
+      - name: Apply merge to resume.json
+        if: ${{ inputs.merge != '' && inputs.validate_only == 'false' }}
+        run: |
+          node - <<'EOF'
+          const fs = require('fs');
+          const merge = JSON.parse(process.env.MERGE_INPUT);
+          const resume = JSON.parse(fs.readFileSync('resume.json', 'utf-8'));
+
+          function deepMerge(target, source) {
+            const output = Object.assign({}, target);
+            for (const key of Object.keys(source)) {
+              if (source[key] && typeof source[key] === 'object' && !Array.isArray(source[key])) {
+                output[key] = deepMerge(target[key] || {}, source[key]);
+              } else {
+                output[key] = source[key];
+              }
+            }
+            return output;
+          }
+
+          const merged = deepMerge(resume, merge);
+          fs.writeFileSync('resume.json', JSON.stringify(merged, null, 2) + '\n');
+          console.log('Merge applied successfully.');
+          EOF
+        env:
+          MERGE_INPUT: ${{ inputs.merge }}
+
+      - name: Validate resume.json
+        run: npm run validate
+
+      - name: Export updated resume artifacts
+        if: ${{ inputs.validate_only == 'false' }}
+        run: |
+          npm run export:html || true
+          npm run export:pdf  || true
+
+      - name: Commit and push changes
+        if: ${{ inputs.validate_only == 'false' }}
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'feat: update resume via workflow_dispatch [skip ci]'
+          file_pattern: 'resume.json resume.html resume.pdf'

@@ -1,0 +1,402 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Resume Pipeline API",
+    "description": "AI-agent-friendly REST API for reading, updating, and processing a JSON Resume. Agents can discover capabilities here and interact programmatically without human intervention.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Kevin Westropp",
+      "url": "https://github.com/highlanderkev/resume"
+    },
+    "license": {
+      "name": "MIT"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "description": "Local development server"
+    }
+  ],
+  "tags": [
+    {
+      "name": "resume",
+      "description": "Read and update the JSON Resume document"
+    },
+    {
+      "name": "pipeline",
+      "description": "Trigger and inspect the data extraction pipeline"
+    },
+    {
+      "name": "meta",
+      "description": "Service health and metadata"
+    }
+  ],
+  "paths": {
+    "/health": {
+      "get": {
+        "tags": ["meta"],
+        "summary": "Health check",
+        "operationId": "getHealth",
+        "responses": {
+          "200": {
+            "description": "Service is healthy",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/resume": {
+      "get": {
+        "tags": ["resume"],
+        "summary": "Get full resume",
+        "description": "Returns the complete resume.json document in JSON Resume format.",
+        "operationId": "getResume",
+        "responses": {
+          "200": {
+            "description": "Full resume document",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Resume"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": ["resume"],
+        "summary": "Update resume (deep merge)",
+        "description": "Deep-merges the request body into the existing resume. Top-level keys are merged; arrays are replaced. After update, `resume validate` is run automatically.",
+        "operationId": "updateResume",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Resume"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Updated resume and validation result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UpdateResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "$ref": "#/components/responses/Error"
+          }
+        }
+      }
+    },
+    "/resume/patch": {
+      "post": {
+        "tags": ["resume"],
+        "summary": "Patch resume (JSON Patch)",
+        "description": "Applies an RFC 6902 JSON Patch document to the resume. Use this for surgical field-level updates. After patching, `resume validate` is run automatically.",
+        "operationId": "patchResume",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/JsonPatchOperation"
+                }
+              },
+              "example": [
+                { "op": "replace", "path": "/basics/summary", "value": "New summary text." },
+                { "op": "add", "path": "/skills/-", "value": { "name": "AI/ML", "keywords": ["LangChain", "OpenAI"] } }
+              ]
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Patched resume and validation result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UpdateResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/Error"
+          },
+          "500": {
+            "$ref": "#/components/responses/Error"
+          }
+        }
+      }
+    },
+    "/resume/skills": {
+      "get": {
+        "tags": ["resume"],
+        "summary": "Get skills section",
+        "operationId": "getSkills",
+        "responses": {
+          "200": {
+            "description": "Skills array",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Skill"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/resume/work": {
+      "get": {
+        "tags": ["resume"],
+        "summary": "Get work experience section",
+        "operationId": "getWork",
+        "responses": {
+          "200": {
+            "description": "Work experience array",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WorkEntry"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/resume/education": {
+      "get": {
+        "tags": ["resume"],
+        "summary": "Get education section",
+        "operationId": "getEducation",
+        "responses": {
+          "200": {
+            "description": "Education array",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EducationEntry"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pipeline/run": {
+      "post": {
+        "tags": ["pipeline"],
+        "summary": "Run extraction pipeline",
+        "description": "Triggers the full extraction pipeline over old_resumes/ and other_resumes/ directories. Returns the analysis results after completion.",
+        "operationId": "runPipeline",
+        "responses": {
+          "200": {
+            "description": "Pipeline completed successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PipelineRunResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "$ref": "#/components/responses/Error"
+          }
+        }
+      }
+    },
+    "/pipeline/status": {
+      "get": {
+        "tags": ["pipeline"],
+        "summary": "Get last pipeline run results",
+        "description": "Returns the analysis.json from the most recent pipeline run. Returns 404 if no run has occurred.",
+        "operationId": "getPipelineStatus",
+        "responses": {
+          "200": {
+            "description": "Last pipeline analysis",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PipelineAnalysis"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/Error"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HealthResponse": {
+        "type": "object",
+        "properties": {
+          "status": { "type": "string", "example": "ok" },
+          "timestamp": { "type": "string", "format": "date-time" }
+        }
+      },
+      "Resume": {
+        "type": "object",
+        "description": "JSON Resume schema (https://jsonresume.org/schema/)",
+        "properties": {
+          "basics": { "type": "object" },
+          "work": { "type": "array", "items": { "$ref": "#/components/schemas/WorkEntry" } },
+          "education": { "type": "array", "items": { "$ref": "#/components/schemas/EducationEntry" } },
+          "skills": { "type": "array", "items": { "$ref": "#/components/schemas/Skill" } },
+          "projects": { "type": "array", "items": { "type": "object" } },
+          "certificates": { "type": "array", "items": { "type": "object" } },
+          "publications": { "type": "array", "items": { "type": "object" } },
+          "volunteer": { "type": "array", "items": { "type": "object" } },
+          "awards": { "type": "array", "items": { "type": "object" } },
+          "interests": { "type": "array", "items": { "type": "object" } },
+          "references": { "type": "array", "items": { "type": "object" } }
+        }
+      },
+      "WorkEntry": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "description": "Company name" },
+          "position": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "startDate": { "type": "string" },
+          "endDate": { "type": "string" },
+          "summary": { "type": "string" },
+          "highlights": { "type": "array", "items": { "type": "string" } }
+        }
+      },
+      "EducationEntry": {
+        "type": "object",
+        "properties": {
+          "institution": { "type": "string" },
+          "area": { "type": "string" },
+          "studyType": { "type": "string" },
+          "startDate": { "type": "string" },
+          "endDate": { "type": "string" },
+          "score": { "type": "string" }
+        }
+      },
+      "Skill": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "description": "Skill category name" },
+          "level": { "type": "string" },
+          "keywords": { "type": "array", "items": { "type": "string" } }
+        }
+      },
+      "UpdateResponse": {
+        "type": "object",
+        "properties": {
+          "ok": { "type": "boolean" },
+          "validation": {
+            "type": "object",
+            "properties": {
+              "valid": { "type": "boolean" },
+              "error": { "type": "string" }
+            }
+          },
+          "resume": { "$ref": "#/components/schemas/Resume" }
+        }
+      },
+      "JsonPatchOperation": {
+        "type": "object",
+        "required": ["op", "path"],
+        "properties": {
+          "op": {
+            "type": "string",
+            "enum": ["add", "remove", "replace", "copy", "move", "test"]
+          },
+          "path": { "type": "string", "description": "JSON Pointer (RFC 6901)" },
+          "from": { "type": "string", "description": "Source pointer for copy/move" },
+          "value": { "description": "Value for add/replace/test operations" }
+        }
+      },
+      "PipelineRunResponse": {
+        "type": "object",
+        "properties": {
+          "ok": { "type": "boolean" },
+          "results": { "$ref": "#/components/schemas/PipelineAnalysis" }
+        }
+      },
+      "PipelineAnalysis": {
+        "type": "object",
+        "properties": {
+          "generatedAt": { "type": "string", "format": "date-time" },
+          "summary": {
+            "type": "object",
+            "properties": {
+              "totalResumesFound": { "type": "integer" },
+              "successfulExtractions": { "type": "integer" },
+              "failureRate": { "type": "string" }
+            }
+          },
+          "fileBreakdown": {
+            "type": "object",
+            "properties": {
+              "pdfs": { "type": "integer" },
+              "textFiles": { "type": "integer" }
+            }
+          },
+          "skills": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "skill": { "type": "string" },
+                "count": { "type": "integer" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "responses": {
+      "Error": {
+        "description": "Error response",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ok": { "type": "boolean", "example": false },
+                "error": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

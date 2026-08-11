@@ -13,6 +13,8 @@
     "pipeline": "node pipeline.js",
     "pipeline:clean": "rm -rf extracted_data && mkdir -p extracted_data",
     "pipeline:full": "npm run pipeline:clean && npm run pipeline",
+    "pipeline:json": "node pipeline.js --json",
+    "serve:api": "node server.js",
     "test": "npm run validate"
   },
   "repository": {

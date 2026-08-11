@@ -14,7 +14,8 @@ const FOLDERS = ['./old_resumes', './other_resumes'];
 const OUTPUT_DIR = './extracted_data';
 
 class ResumeExtractor {
-  constructor() {
+  constructor(options = {}) {
+    this.quiet = options.quiet || false;
     this.extractedData = {
       pdf: [],
       txt: [],
@@ -154,7 +155,7 @@ class ResumeExtractor {
         if (result) {
           this.extractedData.pdf.push(result);
           this.extractedData.metadata.successfulExtractions++;
-          console.log(`✓ Extracted PDF: ${file}`);
+          if (!this.quiet) console.log(`✓ Extracted PDF: ${file}`);
         } else {
           this.extractedData.metadata.failedExtractions++;
         }
@@ -163,7 +164,7 @@ class ResumeExtractor {
         if (result) {
           this.extractedData.txt.push(result);
           this.extractedData.metadata.successfulExtractions++;
-          console.log(`✓ Extracted TXT: ${file}`);
+          if (!this.quiet) console.log(`✓ Extracted TXT: ${file}`);
         } else {
           this.extractedData.metadata.failedExtractions++;
         }
@@ -182,25 +183,25 @@ class ResumeExtractor {
     // Save full extraction
     const fullPath = path.join(OUTPUT_DIR, 'extracted_resumes.json');
     fs.writeFileSync(fullPath, JSON.stringify(this.extractedData, null, 2));
-    console.log(`\n✓ Full extraction saved to: ${fullPath}`);
+    if (!this.quiet) console.log(`\n✓ Full extraction saved to: ${fullPath}`);
 
     // Save PDF extractions
     const pdfPath = path.join(OUTPUT_DIR, 'pdf_extractions.json');
     fs.writeFileSync(pdfPath, JSON.stringify(this.extractedData.pdf, null, 2));
-    console.log(`✓ PDF extractions saved to: ${pdfPath}`);
+    if (!this.quiet) console.log(`✓ PDF extractions saved to: ${pdfPath}`);
 
     // Save TXT extractions
     const txtPath = path.join(OUTPUT_DIR, 'txt_extractions.json');
     fs.writeFileSync(txtPath, JSON.stringify(this.extractedData.txt, null, 2));
-    console.log(`✓ TXT extractions saved to: ${txtPath}`);
+    if (!this.quiet) console.log(`✓ TXT extractions saved to: ${txtPath}`);
 
     // Save metadata summary
     const summaryPath = path.join(OUTPUT_DIR, 'extraction_summary.json');
     fs.writeFileSync(summaryPath, JSON.stringify(this.extractedData.metadata, null, 2));
-    console.log(`✓ Extraction summary saved to: ${summaryPath}`);
+    if (!this.quiet) console.log(`✓ Extraction summary saved to: ${summaryPath}`);
 
     // Generate human-readable report
-    this.generateReport();
+    if (!this.quiet) this.generateReport();
   }
 
   /**
@@ -248,17 +249,21 @@ class ResumeExtractor {
    * Run the full extraction pipeline
    */
   async run() {
-    console.log('🚀 Starting Resume Data Extraction Pipeline\n');
+    if (!this.quiet) {
+      console.log('🚀 Starting Resume Data Extraction Pipeline\n');
+    }
 
     for (const folder of FOLDERS) {
-      console.log(`📁 Processing folder: ${folder}`);
+      if (!this.quiet) console.log(`📁 Processing folder: ${folder}`);
       await this.processFolder(folder);
     }
 
     this.saveOutput();
 
-    console.log('\n✅ Extraction pipeline completed!');
-    console.log(`\nResults saved to: ${OUTPUT_DIR}/`);
+    if (!this.quiet) {
+      console.log('\n✅ Extraction pipeline completed!');
+      console.log(`\nResults saved to: ${OUTPUT_DIR}/`);
+    }
   }
 }
 
@@ -267,9 +272,27 @@ module.exports = ResumeExtractor;
 
 // Run the extractor if called directly
 if (require.main === module) {
-  const extractor = new ResumeExtractor();
-  extractor.run().catch(error => {
-    console.error('Pipeline error:', error);
+  const args = process.argv.slice(2);
+  const jsonMode = args.includes('--json');
+  const outputIdx = args.indexOf('--output');
+  const outputFile = outputIdx !== -1 ? args[outputIdx + 1] : null;
+
+  const extractor = new ResumeExtractor({ quiet: jsonMode });
+  extractor.run().then(() => {
+    if (jsonMode) {
+      const output = JSON.stringify({ ok: true, data: extractor.extractedData }, null, 2);
+      if (outputFile) {
+        require('fs').writeFileSync(outputFile, output);
+      } else {
+        process.stdout.write(output + '\n');
+      }
+    }
+  }).catch(error => {
+    if (jsonMode) {
+      process.stderr.write(JSON.stringify({ ok: false, error: error.message }) + '\n');
+    } else {
+      console.error('Pipeline error:', error);
+    }
     process.exit(1);
   });
 }

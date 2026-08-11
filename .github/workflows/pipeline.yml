@@ -1,0 +1,48 @@
+name: Resume Pipeline
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'old_resumes/**'
+      - 'other_resumes/**'
+      - 'resume.json'
+      - 'extract-resumes.js'
+      - 'resume-parser.js'
+      - 'pipeline.js'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run extraction pipeline (JSON output)
+        run: node pipeline.js --json --output extracted_data/pipeline_results.json
+
+      - name: Upload pipeline artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-results
+          path: extracted_data/
+          retention-days: 30
+
+      - name: Commit updated extracted data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: update extracted pipeline data [skip ci]'
+          file_pattern: 'extracted_data/*.json extracted_data/*.md'

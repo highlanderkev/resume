@@ -3,6 +3,10 @@
 /**
  * Resume Data Pipeline Orchestrator
  * Main entry point that coordinates all extraction and parsing stages
+ *
+ * CLI flags:
+ *   --json         Output machine-readable JSON to stdout (no emoji/decoration)
+ *   --output FILE  Write JSON output to FILE instead of stdout
  */
 
 const fs = require('fs');
@@ -11,28 +15,40 @@ const ResumeExtractor = require('./extract-resumes.js');
 const ResumeParser = require('./resume-parser.js');
 
 class PipelineOrchestrator {
-  constructor() {
+  constructor(options = {}) {
     this.outputDir = './extracted_data';
-    this.logger = {
-      info: (msg) => console.log(`ℹ️  ${msg}`),
-      success: (msg) => console.log(`✅ ${msg}`),
-      error: (msg) => console.error(`❌ ${msg}`),
-      step: (num, total, msg) => console.log(`\n[${num}/${total}] ${msg}`)
-    };
+    this.jsonMode = options.jsonMode || false;
+    this.outputFile = options.outputFile || null;
+    this.logger = this.jsonMode
+      ? {
+          info: () => {},
+          success: () => {},
+          error: (msg) => process.stderr.write(`{"level":"error","message":${JSON.stringify(msg)}}\n`),
+          step: () => {}
+        }
+      : {
+          info: (msg) => console.log(`ℹ️  ${msg}`),
+          success: (msg) => console.log(`✅ ${msg}`),
+          error: (msg) => console.error(`❌ ${msg}`),
+          step: (num, total, msg) => console.log(`\n[${num}/${total}] ${msg}`)
+        };
   }
 
   /**
    * Run the complete pipeline
+   * @returns {Promise<object>} analysis results
    */
   async run() {
-    console.log(`\n${'='.repeat(60)}`);
-    console.log('📊 RESUME DATA EXTRACTION PIPELINE');
-    console.log(`${'='.repeat(60)}\n`);
+    if (!this.jsonMode) {
+      console.log(`\n${'='.repeat(60)}`);
+      console.log('📊 RESUME DATA EXTRACTION PIPELINE');
+      console.log(`${'='.repeat(60)}\n`);
+    }
 
     try {
       // Step 1: Extract raw data from files
       this.logger.step(1, 3, 'Extracting raw data from resume files...');
-      const extractor = new ResumeExtractor();
+      const extractor = new ResumeExtractor({ quiet: this.jsonMode });
       await extractor.run();
       const extractedData = extractor.extractedData;
 
@@ -45,19 +61,40 @@ class PipelineOrchestrator {
 
       // Step 3: Generate analysis and reports
       this.logger.step(3, 3, 'Generating analysis reports...');
-      this.generateAnalysis(extractedData, parsedResumes);
+      const analysis = this.generateAnalysis(extractedData, parsedResumes);
 
-      console.log(`\n${'='.repeat(60)}`);
-      console.log('📁 OUTPUT FILES GENERATED:');
-      console.log(`${'='.repeat(60)}`);
-      this.listOutputFiles();
-      console.log(`\n✨ Pipeline completed successfully!`);
-      console.log(`📂 All data saved to: ${path.resolve(this.outputDir)}\n`);
+      if (!this.jsonMode) {
+        console.log(`\n${'='.repeat(60)}`);
+        console.log('📁 OUTPUT FILES GENERATED:');
+        console.log(`${'='.repeat(60)}`);
+        this.listOutputFiles();
+        console.log(`\n✨ Pipeline completed successfully!`);
+        console.log(`📂 All data saved to: ${path.resolve(this.outputDir)}\n`);
+      } else {
+        const output = JSON.stringify({ ok: true, analysis }, null, 2);
+        if (this.outputFile) {
+          fs.writeFileSync(this.outputFile, output);
+        } else {
+          process.stdout.write(output + '\n');
+        }
+      }
+
+      return analysis;
 
     } catch (error) {
       this.logger.error(`Pipeline failed: ${error.message}`);
-      console.error(error.stack);
-      process.exit(1);
+      if (!this.jsonMode) {
+        console.error(error.stack);
+      } else {
+        const errOutput = JSON.stringify({ ok: false, error: error.message });
+        if (this.outputFile) {
+          fs.writeFileSync(this.outputFile, errOutput);
+        } else {
+          process.stderr.write(errOutput + '\n');
+        }
+      }
+      if (require.main === module) process.exit(1);
+      throw error;
     }
   }
 
@@ -89,6 +126,8 @@ class PipelineOrchestrator {
 
     // Generate markdown report
     this.generateMarkdownReport(analysis, parsedResumes);
+
+    return analysis;
   }
 
   /**
@@ -280,9 +319,23 @@ class PipelineOrchestrator {
   }
 }
 
-// Run the orchestrator
-const orchestrator = new PipelineOrchestrator();
-orchestrator.run().catch(error => {
-  console.error('Fatal error:', error);
-  process.exit(1);
-});
+// Export for use as module
+module.exports = PipelineOrchestrator;
+
+// Run the orchestrator if called directly
+if (require.main === module) {
+  const args = process.argv.slice(2);
+  const jsonMode = args.includes('--json');
+  const outputIdx = args.indexOf('--output');
+  const outputFile = outputIdx !== -1 ? args[outputIdx + 1] : null;
+
+  const orchestrator = new PipelineOrchestrator({ jsonMode, outputFile });
+  orchestrator.run().catch(error => {
+    if (jsonMode) {
+      process.stderr.write(JSON.stringify({ ok: false, error: error.message }) + '\n');
+    } else {
+      console.error('Fatal error:', error);
+    }
+    process.exit(1);
+  });
+}
