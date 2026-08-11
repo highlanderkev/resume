@@ -93,7 +93,8 @@ class PipelineOrchestrator {
           process.stderr.write(errOutput + '\n');
         }
       }
-      process.exit(1);
+      if (require.main === module) process.exit(1);
+      throw error;
     }
   }
 

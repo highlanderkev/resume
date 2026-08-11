@@ -51,8 +51,15 @@ function json(res, status, body) {
 
 function readBody(req) {
   return new Promise((resolve, reject) => {
+    const MAX_BODY_BYTES = 1024 * 1024; // 1 MiB
     let data = '';
-    req.on('data', chunk => { data += chunk; });
+    req.on('data', chunk => {
+      data += chunk;
+      if (Buffer.byteLength(data) > MAX_BODY_BYTES) {
+        req.destroy();
+        reject(new Error('Request body too large'));
+      }
+    });
     req.on('end', () => {
       try {
         resolve(data ? JSON.parse(data) : {});
@@ -72,8 +79,11 @@ function applyJsonPatch(doc, patch) {
   const target = JSON.parse(JSON.stringify(doc)); // deep clone
 
   function getPointer(obj, pointer) {
-    if (pointer === '') return obj;
+    if (pointer === '') throw new Error('Root JSON Pointer "" is not supported');
     const parts = pointer.replace(/^\//, '').split('/').map(p => p.replace(/~1/g, '/').replace(/~0/g, '~'));
+    if (parts.some(p => p === '__proto__' || p === 'constructor' || p === 'prototype')) {
+      throw new Error(`Disallowed path segment in pointer: ${pointer}`);
+    }
     let cur = obj;
     for (let i = 0; i < parts.length - 1; i++) {
       cur = cur[parts[i]];
@@ -88,7 +98,9 @@ function applyJsonPatch(doc, patch) {
       case 'add': {
         const { parent, key } = getPointer(target, ptr);
         if (Array.isArray(parent)) {
-          parent.splice(key === '-' ? parent.length : parseInt(key, 10), 0, value);
+          const idx = key === '-' ? parent.length : Number(key);
+          if (!Number.isInteger(idx) || idx < 0 || idx > parent.length) throw new Error(`Invalid array index: ${ptr}`);
+          parent.splice(idx, 0, value);
         } else {
           parent[key] = value;
         }
@@ -139,6 +151,7 @@ function applyJsonPatch(doc, patch) {
 function deepMerge(target, source) {
   const output = Object.assign({}, target);
   for (const key of Object.keys(source)) {
+    if (key === '__proto__' || key === 'constructor' || key === 'prototype') continue;
     if (source[key] && typeof source[key] === 'object' && !Array.isArray(source[key])) {
       output[key] = deepMerge(target[key] || {}, source[key]);
     } else {
@@ -235,7 +248,13 @@ async function handleRequest(req, res) {
     return json(res, 404, { ok: false, error: `No route: ${method} ${pathname}` });
 
   } catch (err) {
-    return json(res, 500, { ok: false, error: err.message });
+    const isClientError =
+      err.message === 'Invalid JSON body' ||
+      err.message.startsWith('Path not found:') ||
+      err.message.startsWith('Unknown patch op:') ||
+      err.message.startsWith('Test failed at ');
+    const status = err.message === 'Request body too large' ? 413 : isClientError ? 400 : 500;
+    return json(res, status, { ok: false, error: err.message });
   }
 }
 
@@ -243,20 +262,23 @@ async function handleRequest(req, res) {
 // Start server
 // ---------------------------------------------------------------------------
 
+const HOST = process.env.HOST || '127.0.0.1';
 const server = http.createServer(handleRequest);
 
-server.listen(PORT, () => {
-  console.log(`Resume Pipeline API listening on http://localhost:${PORT}`);
-  console.log('Endpoints:');
-  console.log('  GET  /health');
-  console.log('  GET  /resume');
-  console.log('  GET  /resume/skills');
-  console.log('  GET  /resume/work');
-  console.log('  GET  /resume/education');
-  console.log('  POST /resume              (deep-merge body)');
-  console.log('  POST /resume/patch        (RFC 6902 JSON Patch)');
-  console.log('  POST /pipeline/run');
-  console.log('  GET  /pipeline/status');
-});
+if (require.main === module) {
+  server.listen(PORT, HOST, () => {
+    console.log(`Resume Pipeline API listening on http://${HOST}:${PORT}`);
+    console.log('Endpoints:');
+    console.log('  GET  /health');
+    console.log('  GET  /resume');
+    console.log('  GET  /resume/skills');
+    console.log('  GET  /resume/work');
+    console.log('  GET  /resume/education');
+    console.log('  POST /resume              (deep-merge body)');
+    console.log('  POST /resume/patch        (RFC 6902 JSON Patch)');
+    console.log('  POST /pipeline/run');
+    console.log('  GET  /pipeline/status');
+  });
+}
 
 module.exports = server;

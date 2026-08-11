@@ -201,7 +201,7 @@ class ResumeExtractor {
     if (!this.quiet) console.log(`✓ Extraction summary saved to: ${summaryPath}`);
 
     // Generate human-readable report
-    this.generateReport();
+    if (!this.quiet) this.generateReport();
   }
 
   /**

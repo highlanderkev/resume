@@ -38,7 +38,6 @@
     "jsonresume-theme-elegant": "^1.16.1",
     "jsonresume-theme-flat": "^0.3.7",
     "jsonresume-theme-onepage": "^0.0.3",
-    "jsonresume-theme-short": "^0.1.7",
-    "express": "4.x"
+    "jsonresume-theme-short": "^0.1.7"
   }
 }

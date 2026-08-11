@@ -7,7 +7,7 @@ on:
         description: >
           JSON Patch document (RFC 6902) as a JSON array, e.g.
           [{"op":"replace","path":"/basics/summary","value":"New summary."}]
-        required: true
+        required: false
         type: string
       merge:
         description: >
@@ -42,7 +42,7 @@ jobs:
         run: npm ci
 
       - name: Apply patch to resume.json
-        if: ${{ inputs.patch != '' && inputs.validate_only == 'false' }}
+        if: ${{ inputs.patch != '' && inputs.merge == '' && inputs.validate_only == 'false' }}
         run: |
           node - <<'EOF'
           const fs = require('fs');
