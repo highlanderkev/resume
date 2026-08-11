@@ -56,6 +56,27 @@ Or with a clean slate:
 npm run pipeline:full
 ```
 
+### Machine-readable output (for AI agents)
+
+```bash
+# Output JSON to stdout
+npm run pipeline:json
+
+# Write JSON to a file
+node pipeline.js --json --output /tmp/results.json
+
+# Extract only, JSON output
+node extract-resumes.js --json --output /tmp/extracted.json
+```
+
+### Start the REST API server
+
+```bash
+npm run serve:api   # http://localhost:3000
+```
+
+See [AGENT_GUIDE.md](./AGENT_GUIDE.md) for full API documentation.
+
 ### Individual Commands
 
 **Extract raw data only:**
@@ -257,11 +278,15 @@ Each module can be imported and used independently in your own scripts.
 Potential improvements:
 - [ ] Database storage for extracted data
 - [ ] Web UI for viewing results
-- [ ] REST API for accessing extracted data
 - [ ] Machine learning for better skill detection
 - [ ] Support for image-based resume extraction (OCR)
 - [ ] Comparison and deduplication of similar resumes
 - [ ] Export to various formats (CSV, Excel, XML)
+- [x] REST API for accessing extracted data (`server.js`)
+- [x] AI agent integration (`AGENT_GUIDE.md`, `agent-manifest.json`)
+- [x] Machine-readable CLI output (`--json`, `--output` flags)
+- [x] GitHub Actions pipeline automation
+- [x] Resume update workflow via GitHub API (`update-resume.yml`)
 
 ## License
 

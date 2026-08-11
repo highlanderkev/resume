@@ -13,6 +13,8 @@
     "pipeline": "node pipeline.js",
     "pipeline:clean": "rm -rf extracted_data && mkdir -p extracted_data",
     "pipeline:full": "npm run pipeline:clean && npm run pipeline",
+    "pipeline:json": "node pipeline.js --json",
+    "serve:api": "node server.js",
     "test": "npm run validate"
   },
   "repository": {
@@ -36,6 +38,7 @@
     "jsonresume-theme-elegant": "^1.16.1",
     "jsonresume-theme-flat": "^0.3.7",
     "jsonresume-theme-onepage": "^0.0.3",
-    "jsonresume-theme-short": "^0.1.7"
+    "jsonresume-theme-short": "^0.1.7",
+    "express": "4.x"
   }
 }
